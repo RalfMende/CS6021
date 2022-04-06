@@ -1,0 +1,29 @@
+# Version: 14.14.2.5 (d16-9: 3836759d4)
+/Library/Frameworks/Xamarin.iOS.framework/Versions/14.14.2.5/lib/mtouch/mtouch.exe \
+	--debug \
+	--sgen-conc \
+	'/target-framework:Xamarin.iOS,Version=v1.0' \
+	--http-message-handler=NSUrlSessionHandler \
+	'\"--cache=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/mtouch-cache\"' \
+	'\"--root-assembly=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.exe\"' \
+	--sdkroot=/Applications/Xcode.app/Contents/Developer \
+	--targetver=14.4 \
+	'\"--sim=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/CS6021.app\"' \
+	--executable=CS6021 \
+	--nolink \
+	--sdk=14.4 \
+	--aot-options=-O=-float32 \
+	--abi=x86_64 \
+	'\"--symbollist=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/mtouch-symbols.list\"' \
+	--dsym=no \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	--reference=/Users/ralf/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll \
+	'@/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/response-file.rsp' \

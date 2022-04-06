@@ -1,0 +1,15 @@
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/CS6021.exe
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/CS6021.pdb
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/Xamarin.Essentials.dll
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/Xamarin.Essentials.pdb
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.csproj.CoreCompileInputs.cache
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.csproj.CopyComplete
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.exe
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.pdb
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/actool/_PartialAppManifest.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/actool/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/coremlc/_PartialAppManifest.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/coremlc/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/optimized/
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.csproj.AssemblyReference.cache

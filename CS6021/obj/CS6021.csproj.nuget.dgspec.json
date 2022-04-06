@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/CS6021.csproj": {}
+  },
+  "projects": {
+    "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/CS6021.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/CS6021.csproj",
+        "projectName": "CS6021",
+        "projectPath": "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/CS6021.csproj",
+        "packagesPath": "/Users/ralf/.nuget/packages/",
+        "outputPath": "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/ralf/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
