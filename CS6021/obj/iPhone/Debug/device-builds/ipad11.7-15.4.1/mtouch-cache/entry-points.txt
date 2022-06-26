@@ -1,0 +1,32 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_StrErrorR
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/mscorlib.dll
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_managed_ref
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_set_gchandle_with_flags_safe
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=mono_pmip

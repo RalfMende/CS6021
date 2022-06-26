@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gRWdxmysqeynJeotniHCnfVgOA5tx522H4aCTN5USYktVNaY21exPvsODnpT14mVc4yc9dQln1Iy/35CBi+jqw==",
+  "dgSpecHash": "E9UzPhibOjvYpPvKxYyTOkQaeip7u+fUHn5z0MgliDwiNcGyE5SapIgZfsD29ojqO+MEbwyz+k6f1ydxWyzQxg==",
   "success": true,
   "projectFilePath": "/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/CS6021.csproj",
   "expectedPackageFiles": [
     "/Users/ralf/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/ralf/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512"
+    "/Users/ralf/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512"
   ],
   "logs": []
 }

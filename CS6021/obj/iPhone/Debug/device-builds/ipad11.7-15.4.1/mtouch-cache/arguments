@@ -1,0 +1,29 @@
+# Version: 15.8.0.3 (xcode13.3: eb7f8ed35)
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mtouch/mtouch.exe \
+	--debug \
+	--sgen-conc \
+	'/target-framework:Xamarin.iOS,Version=v1.0' \
+	--http-message-handler=NSUrlSessionHandler \
+	'\"--cache=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-cache\"' \
+	'\"--root-assembly=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/CS6021.exe\"' \
+	--sdkroot=/Applications/Xcode.app/Contents/Developer \
+	--targetver=14.4 \
+	'\"--dev=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/device-builds/ipad11.7-15.4.1/CS6021.app\"' \
+	--executable=CS6021 \
+	--linksdkonly \
+	--sdk=15.4 \
+	--aot-options=-O=-float32 \
+	--abi=arm64 \
+	'\"--symbollist=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/mtouch-symbols.list\"' \
+	--dsym=no \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	--reference=/Users/ralf/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll \
+	'@/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/response-file.rsp' \

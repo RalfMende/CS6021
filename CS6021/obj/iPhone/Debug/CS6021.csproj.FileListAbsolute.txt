@@ -13,3 +13,8 @@
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/coremlc/_BundleResourceWithLogicalName.items
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/optimized/
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/CS6021.csproj.AssemblyReference.cache
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/actool/_ProcessedImageAssetsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/_ProcessedBundleResourcesPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/_ProcessedContentPath.items

@@ -17,7 +17,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][]</string>
+				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.4.1/actool/cloned-assets/Assets.xcassets</string>

@@ -1,0 +1,10 @@
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/CS6021.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/mscorlib.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/../../64bits/iOS/Xamarin.iOS.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/System.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/Mono.Security.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/System.Numerics.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/System.Core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/System.Net.Http.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll

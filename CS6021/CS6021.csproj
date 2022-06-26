@@ -26,6 +26,7 @@
         <MtouchArch>x86_64</MtouchArch>
         <MtouchLink>None</MtouchLink>
         <MtouchDebug>true</MtouchDebug>
+        <CodesignKey>iPhone Developer</CodesignKey>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
         <DebugType>none</DebugType>
@@ -46,8 +47,10 @@
         <WarningLevel>4</WarningLevel>
         <MtouchArch>ARM64</MtouchArch>
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-        <CodesignKey>iPhone Developer</CodesignKey>
+        <CodesignKey>Apple Development: mende.r@web.de (ACY9H6635C)</CodesignKey>
         <MtouchDebug>true</MtouchDebug>
+        <CodesignProvision>iOS Team Provisioning Profile: com.Mandy.CS6021</CodesignProvision>
+        <MtouchLink>SdkOnly</MtouchLink>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
         <DebugType>none</DebugType>
@@ -58,6 +61,7 @@
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
         <MtouchArch>ARM64</MtouchArch>
         <CodesignKey>iPhone Developer</CodesignKey>
+        <MtouchLink>SdkOnly</MtouchLink>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
@@ -68,7 +72,7 @@
         <Reference Include="System.Numerics.Vectors" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+      <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -126,9 +130,17 @@
         <ImageAsset Include="Resources\Assets.xcassets\6021_75_mod.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_led.imageset\6021_led.jpg" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_led.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\6040_75.imageset\6040_75.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\6040_75.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\6043_75.imageset\6043_75.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\6043_75.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Assets.xcassets\.DS_Store" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
+        <Folder Include="HardwareControllers\" />
+        <Folder Include="CentralStation\" />
+        <Folder Include="Internal\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -142,16 +154,30 @@
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
         <Compile Include="SceneDelegate.cs" />
-        <Compile Include="ViewController.cs" />
-        <Compile Include="ViewController.designer.cs">
-            <DependentUpon>ViewController.cs</DependentUpon>
+        <Compile Include="ViewCtrl_CentralUnit.cs" />
+        <Compile Include="ViewCtrl_CentralUnit.designer.cs">
+            <DependentUpon>ViewCtrl_CentralUnit.cs</DependentUpon>
         </Compile>
-        <Compile Include="CentralUnit.cs" />
-        <Compile Include="Locomotive.cs" />
-        <Compile Include="CS2_UDP.cs" />
-        <Compile Include="CS2_TCP.cs" />
-        <Compile Include="TableSource.cs" />
-        <Compile Include="UISliderCustom.cs" />
+        <Compile Include="HardwareControllers\CentralUnit.cs" />
+        <Compile Include="HardwareControllers\Keyboard.cs" />
+        <Compile Include="HardwareControllers\Memory.cs" />
+        <Compile Include="CentralStation\CS2_TCP.cs" />
+        <Compile Include="CentralStation\CS2_UDP.cs" />
+        <Compile Include="CentralStation\CS1.cs" />
+        <Compile Include="Internal\Accessory.cs" />
+        <Compile Include="Internal\Locomotive.cs" />
+        <Compile Include="Internal\TableSource.cs" />
+        <Compile Include="Internal\UISliderCustom.cs" />
+        <Compile Include="Internal\route.cs" />
+        <Compile Include="ViewCtrl_Keyboard.cs" />
+        <Compile Include="ViewCtrl_Keyboard.designer.cs">
+          <DependentUpon>ViewCtrl_Keyboard.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ViewCtrl_Memory.cs" />
+        <Compile Include="ViewCtrl_Memory.designer.cs">
+          <DependentUpon>ViewCtrl_Memory.cs</DependentUpon>
+        </Compile>
+        <Compile Include="CentralStation\CentralStation.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

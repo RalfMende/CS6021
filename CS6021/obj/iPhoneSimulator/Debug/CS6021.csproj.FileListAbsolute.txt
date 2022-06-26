@@ -2,12 +2,17 @@
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.pdb
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/actool/_PartialAppManifest.items
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/actool/_BundleResourceWithLogicalName.items
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/ibtool/_BundleResourceWithLogicalName.items
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/coremlc/_PartialAppManifest.items
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/coremlc/_BundleResourceWithLogicalName.items
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (8th generation)-14.4/optimized/
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/actool/_PartialAppManifest.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/actool/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/actool/_ProcessedImageAssetsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/ibtool/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/coremlc/_PartialAppManifest.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/coremlc/_BundleResourceWithLogicalName.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/_ProcessedBundleResourcesPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/_ProcessedContentPath.items
+/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/optimized/
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.AssemblyReference.cache
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.CoreCompileInputs.cache
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.CopyComplete
