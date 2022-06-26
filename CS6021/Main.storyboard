@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--control unit-->
+        <!--controlUnit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewCtrl_CentralUnit" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="controlUnit" customClass="ViewCtrl_ControlUnit" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,29 +20,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.20.48" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zed-Mo-3s1">
-                                <rect key="frame" x="0.0" y="28" width="189" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-fP-Ysc" userLabel="btn_connect">
-                                <rect key="frame" x="0.0" y="62" width="189" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connect"/>
-                                <connections>
-                                    <action selector="btn_connect_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ped-Ko-c6J"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6021_75_mod" translatesAutoresizingMaskIntoConstraints="NO" id="hGz-FY-Zdn" userLabel="background_Img_controlUnit">
                                 <rect key="frame" x="-8" y="0.0" width="1088" height="760"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFv-95-gyy" userLabel="tablVw_locomotives">
-                                <rect key="frame" x="0.0" y="93" width="189" height="659"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.20.48" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zed-Mo-3s1">
+                                <rect key="frame" x="891" y="28" width="189" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFv-95-gyy" userLabel="tablVw_ControlUnit">
+                                <rect key="frame" x="0.0" y="72" width="189" height="680"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="vyW-S4-KLb" userLabel="NavigationBar_ControlUnit">
+                                <rect key="frame" x="0.0" y="28" width="189" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="control units" id="UQO-ke-TA3">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="5Qu-f7-2b1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="125" translatesAutoresizingMaskIntoConstraints="NO" id="ntb-UH-C3Y" userLabel="sld_speed">
                                 <rect key="frame" x="733" y="391" width="559" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,7 +53,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.transform.rotation.z" value="-1.570795"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sld_speed_touch_down:" destination="BYZ-38-t0r" eventType="touchDown" id="9dT-Bu-fxK"/>
                                     <action selector="sld_speed_value_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="h00-Xs-e0Z"/>
                                 </connections>
                             </slider>
@@ -70,6 +70,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knob_75" translatesAutoresizingMaskIntoConstraints="NO" id="H8D-nF-Xee" userLabel="knob_Img">
                                 <rect key="frame" x="519" y="424" width="234" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="s5M-1P-1O8" appends="YES" id="cE6-r7-aeP"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBb-cR-ZYM" userLabel="btn_1">
                                 <rect key="frame" x="269" y="251" width="58" height="42"/>
@@ -286,11 +290,20 @@
                                 <rect key="frame" x="692" y="315" width="31" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-fP-Ysc" userLabel="btn_connect">
+                                <rect key="frame" x="891" y="62" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="btn_connect_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ped-Ko-c6J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="control unit" id="Hnx-SV-4Te" userLabel="control unit"/>
                     <connections>
+                        <outlet property="btn_controlUnit_add" destination="5Qu-f7-2b1" id="k0s-CY-hrf"/>
                         <outlet property="btn_direction" destination="kzf-cL-RWE" id="sZe-bk-sIp"/>
                         <outlet property="btn_direction2" destination="WFk-yu-0ca" id="31G-xy-6rq"/>
                         <outlet property="btn_protocol" destination="Jy4-hk-M9I" id="uWb-nv-18n"/>
@@ -303,11 +316,16 @@
                         <outlet property="led_f4_img" destination="at5-3f-wNm" id="NBF-hP-AAd"/>
                         <outlet property="led_function_img" destination="Nha-0I-Joo" id="FMh-Rj-gVH"/>
                         <outlet property="sld_speed" destination="ntb-UH-C3Y" id="jmK-kO-pNZ"/>
-                        <outlet property="tablVw_locomotives" destination="BFv-95-gyy" id="Qjl-8c-5Ap"/>
+                        <outlet property="tablVw_ControlUnit" destination="BFv-95-gyy" id="4Wg-bM-aVz"/>
                         <outlet property="txt_ipAddress" destination="zed-Mo-3s1" id="xAb-iY-kZV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="s5M-1P-1O8">
+                    <connections>
+                        <action selector="knob_slided:" destination="BYZ-38-t0r" id="B5Y-Qt-ZRc"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="717.77777777777771" y="0.0"/>
         </scene>
@@ -347,17 +365,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1080" height="760"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Mg-lu-IiJ" userLabel="tblVw_Keyboard">
-                                <rect key="frame" x="0.0" y="0.0" width="189" height="760"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJR-cU-mgY" userLabel="NavigationBar_Keyboards">
+                                <rect key="frame" x="0.0" y="20" width="189" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="keyboards" id="I1h-xB-iTy">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RcZ-8R-mbe"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-TQ-0CL" userLabel="btn_1_red">
                                 <rect key="frame" x="277" y="247" width="58" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_1_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="5OQ-zc-xjT"/>
+                                    <action selector="btn_1_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="5OQ-zc-xjT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89M-8w-CIB" userLabel="btn_1_green">
@@ -365,7 +387,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_1_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="YYK-4S-zOY"/>
+                                    <action selector="btn_1_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="YYK-4S-zOY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0B-i3-prU" userLabel="btn_2_red">
@@ -373,7 +395,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_2_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="XPV-ss-jdm"/>
+                                    <action selector="btn_2_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="XPV-ss-jdm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-Ii-YU1" userLabel="btn_2_green">
@@ -381,7 +403,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_2_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="TWd-Wy-cR0"/>
+                                    <action selector="btn_2_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="TWd-Wy-cR0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKO-8G-172" userLabel="btn_3_red">
@@ -389,7 +411,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_3_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="6r9-X5-3vp"/>
+                                    <action selector="btn_3_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="6r9-X5-3vp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-bS-TS7" userLabel="btn_3_green">
@@ -397,7 +419,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_3_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="97u-NO-Bbd"/>
+                                    <action selector="btn_3_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="97u-NO-Bbd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-3c-J2P" userLabel="btn_4_red">
@@ -405,7 +427,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_4_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="EAo-5c-shv"/>
+                                    <action selector="btn_4_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="EAo-5c-shv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-5M-YtY" userLabel="btn_4_green">
@@ -413,7 +435,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_4_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="gbd-Hy-x5B"/>
+                                    <action selector="btn_4_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="gbd-Hy-x5B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-03-re8" userLabel="btn_5_red">
@@ -421,7 +443,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_5_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="C4R-5w-U8N"/>
+                                    <action selector="btn_5_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="C4R-5w-U8N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-iJ-fkg" userLabel="btn_5_green">
@@ -429,7 +451,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_5_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="Rcj-ag-F6V"/>
+                                    <action selector="btn_5_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="Rcj-ag-F6V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9O-iP-2dl" userLabel="btn_6_red">
@@ -437,7 +459,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_6_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="UKj-JA-KLZ"/>
+                                    <action selector="btn_6_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="UKj-JA-KLZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7r-tQ-urE" userLabel="btn_6_green">
@@ -445,7 +467,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_6_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="qWc-YQ-HkM"/>
+                                    <action selector="btn_6_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="qWc-YQ-HkM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-Kc-twN" userLabel="btn_7_red">
@@ -453,7 +475,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_7_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="kWF-4E-2cD"/>
+                                    <action selector="btn_7_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="kWF-4E-2cD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQS-OT-vS9" userLabel="btn_7_green">
@@ -461,7 +483,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_7_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="FKL-cH-cLM"/>
+                                    <action selector="btn_7_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="FKL-cH-cLM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBG-Uu-3fV" userLabel="btn_8_red">
@@ -469,7 +491,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_8_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="VCI-j8-KPQ"/>
+                                    <action selector="btn_8_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="VCI-j8-KPQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgK-LC-Mlq" userLabel="btn_8_green">
@@ -477,7 +499,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_8_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="KSy-w5-FEn"/>
+                                    <action selector="btn_8_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="KSy-w5-FEn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-8E-S8R" userLabel="btn_9_red">
@@ -485,7 +507,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_9_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="nhT-s0-ON9"/>
+                                    <action selector="btn_9_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="nhT-s0-ON9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy2-vZ-cAM" userLabel="btn_9_green">
@@ -493,7 +515,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_9_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="nk0-h0-eLw"/>
+                                    <action selector="btn_9_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="nk0-h0-eLw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-z8-YVY" userLabel="btn_10_red">
@@ -501,7 +523,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_10_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="lwp-RU-vkn"/>
+                                    <action selector="btn_10_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="lwp-RU-vkn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9y-0d-QvD" userLabel="btn_10_green">
@@ -509,7 +531,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_10_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="egr-Ig-Rhf"/>
+                                    <action selector="btn_10_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="egr-Ig-Rhf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-T2-eef" userLabel="btn_11_red">
@@ -517,7 +539,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_11_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="K8D-VD-TMu"/>
+                                    <action selector="btn_11_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="K8D-VD-TMu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-0R-kIh" userLabel="btn_11_green">
@@ -525,7 +547,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_11_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="qzS-qF-KMd"/>
+                                    <action selector="btn_11_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="qzS-qF-KMd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5X-Nw-qDF" userLabel="btn_12_red">
@@ -533,7 +555,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_12_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="XKR-fV-zQq"/>
+                                    <action selector="btn_12_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="XKR-fV-zQq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X6-Fi-3v2" userLabel="btn_12_green">
@@ -541,7 +563,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_12_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="IeL-0D-Qzn"/>
+                                    <action selector="btn_12_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="IeL-0D-Qzn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-GP-67s" userLabel="btn_13_red">
@@ -549,7 +571,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_13_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="6bT-sd-nvj"/>
+                                    <action selector="btn_13_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="6bT-sd-nvj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNk-PE-s6L" userLabel="btn_13_green">
@@ -557,7 +579,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_13_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="ZmC-eC-eMv"/>
+                                    <action selector="btn_13_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="ZmC-eC-eMv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEO-35-RAG" userLabel="btn_14_red">
@@ -565,7 +587,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_14_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="ha6-V7-uaU"/>
+                                    <action selector="btn_14_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="ha6-V7-uaU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-aA-3ck" userLabel="btn_14_green">
@@ -573,7 +595,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_14_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="hLX-pN-Iy3"/>
+                                    <action selector="btn_14_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="hLX-pN-Iy3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FW-wi-GV3" userLabel="btn_15_red">
@@ -581,7 +603,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_15_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="L0M-g6-Egw"/>
+                                    <action selector="btn_15_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="L0M-g6-Egw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-Tc-fdv" userLabel="btn_15_green">
@@ -597,7 +619,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_16_red:" destination="0ro-eR-EBX" eventType="touchUpInside" id="Ozh-Mg-Tcm"/>
+                                    <action selector="btn_16_red_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="Ozh-Mg-Tcm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovh-Oq-gPJ" userLabel="btn_16_green">
@@ -605,7 +627,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_16_green:" destination="0ro-eR-EBX" eventType="touchUpInside" id="D1b-1E-FTE"/>
+                                    <action selector="btn_16_green_pressed:" destination="0ro-eR-EBX" eventType="touchUpInside" id="D1b-1E-FTE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT7-Es-oLm" userLabel="lbl_instance">
@@ -617,11 +639,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Mg-lu-IiJ" userLabel="tblVw_Keyboard">
+                                <rect key="frame" x="0.0" y="64" width="189" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="keyboard" id="6sd-4h-qbw"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btn_keyboard_add" destination="RcZ-8R-mbe" id="2Ug-TU-lJN"/>
                         <outlet property="tblVw_Keyboard" destination="0Mg-lu-IiJ" id="xGJ-Vy-EUs"/>
                     </connections>
                 </viewController>
@@ -646,16 +676,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R8P-Qm-4iX" userLabel="tblVw_Memory">
-                                <rect key="frame" x="0.0" y="0.0" width="189" height="760"/>
+                                <rect key="frame" x="0.0" y="64" width="189" height="696"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="lbt-Xp-R8O" userLabel="NavigationBar_Memories">
+                                <rect key="frame" x="0.0" y="20" width="189" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="memories" id="TQo-jW-aaB">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wVl-VN-XW0"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-LO-VRH" userLabel="btn_extern">
                                 <rect key="frame" x="276" y="250" width="58" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_extern:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="QXm-6a-Z1E"/>
+                                    <action selector="btn_extern_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="QXm-6a-Z1E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prW-Ft-hxX" userLabel="btn_off">
@@ -663,7 +702,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_off:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="MD5-7j-2Uu"/>
+                                    <action selector="btn_off_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="MD5-7j-2Uu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPr-RX-KZg" userLabel="btn_input">
@@ -671,7 +710,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_input:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="ZQw-Sz-zm3"/>
+                                    <action selector="btn_input_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="ZQw-Sz-zm3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sno-JY-kML" userLabel="btn_end">
@@ -679,7 +718,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_end:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YcS-0F-IvY"/>
+                                    <action selector="btn_end_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YcS-0F-IvY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-Z8-WDG" userLabel="btn_clear">
@@ -687,7 +726,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_red_75"/>
                                 <connections>
-                                    <action selector="btn_clear:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="fqp-ch-2VC"/>
+                                    <action selector="btn_clear_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="fqp-ch-2VC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-ek-RkO" userLabel="btn_A1">
@@ -695,7 +734,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A1:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="DNl-8H-7Xn"/>
+                                    <action selector="btn_A1_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="DNl-8H-7Xn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbl-U3-P0k" userLabel="btn_A2">
@@ -703,7 +742,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A2:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="xXt-Ft-KRr"/>
+                                    <action selector="btn_A2_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="xXt-Ft-KRr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDY-0c-UNE" userLabel="btn_A3">
@@ -711,7 +750,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A3:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YiJ-SU-1et"/>
+                                    <action selector="btn_A3_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YiJ-SU-1et"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otU-go-uuv" userLabel="btn_A4">
@@ -719,7 +758,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A4:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="iT0-e0-dcH"/>
+                                    <action selector="btn_A4_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="iT0-e0-dcH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-1U-S1g" userLabel="btn_A5">
@@ -727,7 +766,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A5:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YcM-zy-SDA"/>
+                                    <action selector="btn_A5_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="YcM-zy-SDA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWu-ni-IVj" userLabel="btn_A6">
@@ -735,7 +774,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A6:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="eo1-CB-ZTN"/>
+                                    <action selector="btn_A6_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="eo1-CB-ZTN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2I-Vc-x0r" userLabel="btn_A7">
@@ -743,7 +782,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A7:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Lh0-SX-muY"/>
+                                    <action selector="btn_A7_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Lh0-SX-muY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhk-cd-4bk" userLabel="btn_A8">
@@ -751,7 +790,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_A8:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="h0E-Za-Xzx"/>
+                                    <action selector="btn_A8_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="h0E-Za-Xzx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sJ-qe-DRk" userLabel="btn_B1">
@@ -759,7 +798,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B1:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="q14-im-3HP"/>
+                                    <action selector="btn_B1_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="q14-im-3HP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-qU-htp" userLabel="btn_B2">
@@ -767,7 +806,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B2:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="bOt-F3-AxH"/>
+                                    <action selector="btn_B2_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="bOt-F3-AxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-8p-WBc" userLabel="btn_B3">
@@ -775,15 +814,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B3:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Ezx-kq-3BZ"/>
+                                    <action selector="btn_B3_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Ezx-kq-3BZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VJ-Bx-Q1F" userLabel="btn_B4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9VJ-Bx-Q1F" userLabel="btn_B4">
                                 <rect key="frame" x="480" y="384" width="58" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B4:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Zrq-Jy-lFj"/>
+                                    <action selector="btn_B4_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Zrq-Jy-lFj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-VT-nN5" userLabel="btn_B5">
@@ -791,7 +830,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B5:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="lmb-oX-q1p"/>
+                                    <action selector="btn_B5_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="lmb-oX-q1p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-uH-gb2" userLabel="btn_B6">
@@ -799,7 +838,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B6:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Nzp-33-x1S"/>
+                                    <action selector="btn_B6_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Nzp-33-x1S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-gs-fQJ" userLabel="btn_B7">
@@ -807,7 +846,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B7:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="cRW-Pw-nwZ"/>
+                                    <action selector="btn_B7_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="cRW-Pw-nwZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKi-XC-LgB" userLabel="btn_B8">
@@ -815,7 +854,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_B8:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="mMr-8U-nev"/>
+                                    <action selector="btn_B8_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="mMr-8U-nev"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-Fu-m93" userLabel="btn_C1">
@@ -823,7 +862,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C1:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="LmZ-qS-mcB"/>
+                                    <action selector="btn_C1_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="LmZ-qS-mcB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-3M-bw9" userLabel="btn_C2">
@@ -831,7 +870,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C2:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="WCI-q7-QdD"/>
+                                    <action selector="btn_C2_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="WCI-q7-QdD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-Rx-roB" userLabel="btn_C3">
@@ -839,7 +878,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C3:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="KL2-tp-aT5"/>
+                                    <action selector="btn_C3_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="KL2-tp-aT5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3um-ng-hrb" userLabel="btn_C4">
@@ -847,7 +886,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C4:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="jHZ-gj-k4a"/>
+                                    <action selector="btn_C4_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="jHZ-gj-k4a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nda-Nl-jrC" userLabel="btn_C5">
@@ -855,7 +894,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C5:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="U8w-pp-8za"/>
+                                    <action selector="btn_C5_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="U8w-pp-8za"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-f0-hZ4" userLabel="btn_C6">
@@ -863,7 +902,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C6:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="jgV-Z6-G4G"/>
+                                    <action selector="btn_C6_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="jgV-Z6-G4G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-Uu-UdX" userLabel="btn_C7">
@@ -871,7 +910,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C7:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Ak9-dr-lUt"/>
+                                    <action selector="btn_C7_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="Ak9-dr-lUt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHS-kN-ilS" userLabel="btn_C8">
@@ -879,7 +918,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="6021_btn_green_75"/>
                                 <connections>
-                                    <action selector="btn_C8:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="D3l-ge-Tw1"/>
+                                    <action selector="btn_C8_pressed:" destination="gmw-MG-Vqh" eventType="touchUpInside" id="D3l-ge-Tw1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6021_led" translatesAutoresizingMaskIntoConstraints="NO" id="q0i-fd-iw2" userLabel="led_extern_img">
@@ -916,6 +955,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="memory" id="Bfc-J7-iEO"/>
                     <connections>
+                        <outlet property="btn_memory_add" destination="wVl-VN-XW0" id="VlJ-7t-d9O"/>
                         <outlet property="led_clear_img" destination="8oh-Qa-PYW" id="LPK-Nt-M1q"/>
                         <outlet property="led_end_img" destination="aQ1-aA-Yhu" id="2ax-gq-a01"/>
                         <outlet property="led_extern_img" destination="q0i-fd-iw2" id="e3g-oJ-M7h"/>

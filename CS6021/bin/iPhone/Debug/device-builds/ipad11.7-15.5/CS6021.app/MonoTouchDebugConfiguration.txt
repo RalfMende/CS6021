@@ -1,0 +1,7 @@
+IP: 192.168.20.21
+IP: fe80::1869:4322:e605:3e9e
+IP: fe80::d4ef:f4ff:feef:e15f
+IP: fe80::84f9:aa3:dd8c:118c
+IP: fe80::3ff3:53f:ecef:1231
+IP: fe80::ce81:b1c:bd2c:69e
+Port: 10000

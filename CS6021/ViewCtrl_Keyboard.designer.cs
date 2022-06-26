@@ -13,6 +13,9 @@ namespace CS6021
 	partial class ViewCtrl_Keyboard
 	{
 		[Outlet]
+		UIKit.UIBarButtonItem btn_keyboard_add { get; set; }
+
+		[Outlet]
 		UIKit.UITableView tblVw_Keyboard { get; set; }
 
 		[Action ("btn_1_green_pressed:")]
@@ -116,6 +119,11 @@ namespace CS6021
 			if (tblVw_Keyboard != null) {
 				tblVw_Keyboard.Dispose ();
 				tblVw_Keyboard = null;
+			}
+
+			if (btn_keyboard_add != null) {
+				btn_keyboard_add.Dispose ();
+				btn_keyboard_add = null;
 			}
 		}
 	}

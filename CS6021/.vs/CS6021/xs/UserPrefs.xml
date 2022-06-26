@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{0252A39D-AAD4-4EB3-99C5-E6EF47AF1FB7}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CS6021" expanded="True" selected="True">
+            <Node name="CS6021" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CS6021 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78A9E6CE-5211-4E5E-8415-AC1D800E34D5" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -13,7 +13,6 @@
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/_ProcessedBundleResourcesPath.items
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/_ProcessedContentPath.items
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/device-builds/ipad (9th generation)-15.5/optimized/
-/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.AssemblyReference.cache
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.CoreCompileInputs.cache
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.csproj.CopyComplete
 /Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/CS6021.exe

@@ -13,6 +13,9 @@ namespace CS6021
 	partial class ViewCtrl_Memory
 	{
 		[Outlet]
+		UIKit.UIBarButtonItem btn_memory_add { get; set; }
+
+		[Outlet]
 		UIKit.UIImageView led_clear_img { get; set; }
 
 		[Outlet]
@@ -119,6 +122,16 @@ namespace CS6021
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (tblVw_Memory != null) {
+				tblVw_Memory.Dispose ();
+				tblVw_Memory = null;
+			}
+
+			if (btn_memory_add != null) {
+				btn_memory_add.Dispose ();
+				btn_memory_add = null;
+			}
+
 			if (led_clear_img != null) {
 				led_clear_img.Dispose ();
 				led_clear_img = null;
@@ -142,11 +155,6 @@ namespace CS6021
 			if (led_off_img != null) {
 				led_off_img.Dispose ();
 				led_off_img = null;
-			}
-
-			if (tblVw_Memory != null) {
-				tblVw_Memory.Dispose ();
-				tblVw_Memory = null;
 			}
 		}
 	}

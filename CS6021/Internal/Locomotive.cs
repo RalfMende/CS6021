@@ -6,6 +6,7 @@ namespace CS6021
     {
         public Locomotive()
         {
+            functionsState = new bool[5];
         }
 
         ~Locomotive()

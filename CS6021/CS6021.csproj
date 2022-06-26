@@ -75,48 +75,6 @@
       <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     </ItemGroup>
     <ItemGroup>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
-            <Visible>false</Visible>
-        </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-            <Visible>false</Visible>
-        </ImageAsset>
         <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_red_75.imageset\6021_btn_red_75.jpg" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_red_75.imageset\Contents.json" />
@@ -139,7 +97,7 @@
     <ItemGroup>
         <Folder Include="Resources\" />
         <Folder Include="HardwareControllers\" />
-        <Folder Include="CentralStation\" />
+        <Folder Include="CentralStations\" />
         <Folder Include="Internal\" />
     </ItemGroup>
     <ItemGroup>
@@ -154,19 +112,15 @@
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
         <Compile Include="SceneDelegate.cs" />
-        <Compile Include="ViewCtrl_CentralUnit.cs" />
-        <Compile Include="ViewCtrl_CentralUnit.designer.cs">
-            <DependentUpon>ViewCtrl_CentralUnit.cs</DependentUpon>
-        </Compile>
-        <Compile Include="HardwareControllers\CentralUnit.cs" />
+        <Compile Include="HardwareControllers\ControlUnit.cs" />
         <Compile Include="HardwareControllers\Keyboard.cs" />
         <Compile Include="HardwareControllers\Memory.cs" />
-        <Compile Include="CentralStation\CS2_TCP.cs" />
-        <Compile Include="CentralStation\CS2_UDP.cs" />
-        <Compile Include="CentralStation\CS1.cs" />
+        <Compile Include="CentralStations\CS2_TCP.cs" />
+        <Compile Include="CentralStations\CS2_UDP.cs" />
+        <Compile Include="CentralStations\CS1.cs" />
         <Compile Include="Internal\Accessory.cs" />
         <Compile Include="Internal\Locomotive.cs" />
-        <Compile Include="Internal\TableSource.cs" />
+        <Compile Include="Internal\TableSourceControlUnit.cs" />
         <Compile Include="Internal\UISliderCustom.cs" />
         <Compile Include="Internal\route.cs" />
         <Compile Include="ViewCtrl_Keyboard.cs" />
@@ -177,7 +131,13 @@
         <Compile Include="ViewCtrl_Memory.designer.cs">
           <DependentUpon>ViewCtrl_Memory.cs</DependentUpon>
         </Compile>
-        <Compile Include="CentralStation\CentralStation.cs" />
+        <Compile Include="CentralStations\CentralStation.cs" />
+        <Compile Include="Internal\TableSourceMemory.cs" />
+        <Compile Include="Internal\TableSourceKeyboard.cs" />
+        <Compile Include="ViewCtrl_ControlUnit.cs" />
+        <Compile Include="ViewCtrl_ControlUnit.designer.cs">
+          <DependentUpon>ViewCtrl_ControlUnit.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

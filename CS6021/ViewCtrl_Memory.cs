@@ -10,7 +10,7 @@ namespace CS6021
 	public partial class ViewCtrl_Memory : UIViewController
 	{
 		public List<Memory> memories = new List<Memory>();
-		Memory memoryInstance;
+		private int currentMemoryInstanceListIndex = 0;
 
 		public ViewCtrl_Memory (IntPtr handle) : base (handle)
 		{
@@ -20,144 +20,161 @@ namespace CS6021
 		{
 			base.ViewDidLoad();
 
-			memoryInstance = new Memory();
-
-			// initially create one memory instance with default value
-			//TODO: only if app opens for the first time, other load stored data
-			memoryInstance.nameOfInstance = "Hbf";
-			//memoryInstance.routeArray[0].
-			//memories.add(memoryInstance);
-
 			led_extern_img.Hidden = true;
 			led_off_img.Hidden = true;
 			led_input_img.Hidden = true;
 			led_end_img.Hidden = true;
 			led_clear_img.Hidden = true;
 
+			//TODO: Initially put one instance if apps runs for the first time
+			memories.Add(new Memory("Hbf"));
+
+			tblVw_Memory.Source = new TableSourceMemory(memories);
+			Add(tblVw_Memory);
+			((TableSourceMemory)tblVw_Memory.Source).MemorySelected += ViewController_MemorySelected;
+
+			btn_memory_add.Clicked += btn_memory_add_EventHandler;
+		}
+
+		public override void DidReceiveMemoryWarning()
+		{
+			base.DidReceiveMemoryWarning();
+			// Release any cached data, images, etc that aren't in use.
+		}
+
+		/*--------------------------------------------------------------------*/
+
+		void ViewController_MemorySelected(object sender, int currentMemoryListIndex)
+		{
+			currentMemoryInstanceListIndex = currentMemoryListIndex;
+		}
+
+		private void btn_memory_add_EventHandler(object sender, EventArgs args)
+		{
+			memories.Add(new Memory());
+			tblVw_Memory.ReloadData();
 		}
 
 		/*--------------------------------------------------------------------*/
 
 		partial void btn_A1_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(1);
+			memories[currentMemoryInstanceListIndex].SetRoute(1);
 		}
 
 		partial void btn_A2_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(2);
+			memories[currentMemoryInstanceListIndex].SetRoute(2);
 		}
 
 		partial void btn_A3_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(3);
+			memories[currentMemoryInstanceListIndex].SetRoute(3);
 		}
 
 		partial void btn_A4_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(4);
+			memories[currentMemoryInstanceListIndex].SetRoute(4);
 		}
 
 		partial void btn_A5_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(5);
+			memories[currentMemoryInstanceListIndex].SetRoute(5);
 		}
 
 		partial void btn_A6_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(6);
+			memories[currentMemoryInstanceListIndex].SetRoute(6);
 		}
 
 		partial void btn_A7_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(7);
+			memories[currentMemoryInstanceListIndex].SetRoute(7);
 		}
 
 		partial void btn_A8_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(8);
+			memories[currentMemoryInstanceListIndex].SetRoute(8);
 		}
-
 
 		partial void btn_B1_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(9);
+			memories[currentMemoryInstanceListIndex].SetRoute(9);
 		}
 
 		partial void btn_B2_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(10);
+			memories[currentMemoryInstanceListIndex].SetRoute(10);
 		}
 
 		partial void btn_B3_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(11);
+			memories[currentMemoryInstanceListIndex].SetRoute(11);
 		}
 
 		partial void btn_B4_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(12);
+			memories[currentMemoryInstanceListIndex].SetRoute(12);
 		}
 
 		partial void btn_B5_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(13);
+			memories[currentMemoryInstanceListIndex].SetRoute(13);
 		}
 
 		partial void btn_B6_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(14);
+			memories[currentMemoryInstanceListIndex].SetRoute(14);
 		}
 
 		partial void btn_B7_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(15);
+			memories[currentMemoryInstanceListIndex].SetRoute(15);
 		}
 
 		partial void btn_B8_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(16);
+			memories[currentMemoryInstanceListIndex].SetRoute(16);
 		}
-
 
 		partial void btn_C1_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(17);
+			memories[currentMemoryInstanceListIndex].SetRoute(17);
 		}
 
 		partial void btn_C2_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(18);
+			memories[currentMemoryInstanceListIndex].SetRoute(18);
 		}
 
 		partial void btn_C3_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(19);
+			memories[currentMemoryInstanceListIndex].SetRoute(19);
 		}
 
 		partial void btn_C4_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(20);
+			memories[currentMemoryInstanceListIndex].SetRoute(20);
 		}
 
 		partial void btn_C5_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(21);
+			memories[currentMemoryInstanceListIndex].SetRoute(21);
 		}
 
 		partial void btn_C6_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(22);
+			memories[currentMemoryInstanceListIndex].SetRoute(22);
 		}
 
 		partial void btn_C7_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(23);
+			memories[currentMemoryInstanceListIndex].SetRoute(23);
 		}
 
 		partial void btn_C8_pressed(UIButton sender)
 		{
-			memoryInstance.SetRoute(24);
+			memories[currentMemoryInstanceListIndex].SetRoute(24);
 		}
 
 		/*--------------------------------------------------------------------*/

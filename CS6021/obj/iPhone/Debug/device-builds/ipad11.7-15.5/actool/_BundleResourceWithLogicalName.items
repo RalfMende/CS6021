@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/ipad11.7-15.5/actool/bundle/Assets.car">
+      <Optimize>false</Optimize>
+      <LogicalName>Assets.car</LogicalName>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

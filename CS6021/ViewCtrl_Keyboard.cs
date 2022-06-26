@@ -10,8 +10,8 @@ namespace CS6021
 	public partial class ViewCtrl_Keyboard : UIViewController
 	{
 		public List<Keyboard> keyboards = new List<Keyboard>();
-		Keyboard keyboardInstance;
-		
+		private int currentKeyboardInstanceListIndex = 0;
+
 		public ViewCtrl_Keyboard(IntPtr handle) : base(handle)
 		{
 		}
@@ -20,195 +20,196 @@ namespace CS6021
 		{
 			base.ViewDidLoad();
 
-			/*
-			keyboardInstance = new Keyboard();
+			//TODO: Initially put one instance if apps runs for the first time
+			keyboards.Add(new Keyboard("1-16", 1));
+			keyboards.Add(new Keyboard("17-32", 17));
 
-			// initially create one keyboard instance with default value
-			//TODO: only if app opens for the first time, other load stored data
-			keyboardInstance.nameOfInstance = "1-16";
-			for (int index = 0; index < 16; index++)
-			{
-				keyboardInstance.acessoryArray[index].id = Convert.ToByte(index + 1);
-				keyboardInstance.acessoryArray[index].name = Convert.ToString(index + 1);
-				keyboardInstance.acessoryArray[index].Protocol = Accessory.e_DecoderType.MM;
-				keyboardInstance.acessoryArray[index].Position = Accessory.e_Position.on_green_stright_hp1;
-			}
-			keyboards.Add(keyboardInstance);
-			keyboardInstance.nameOfInstance = "17-32";
-			for (int index = 17; index < 32; index++)
-			{
-				keyboardInstance.acessoryArray[index].id = Convert.ToByte(index + 1);
-				keyboardInstance.acessoryArray[index].name = Convert.ToString(index + 1);
-				keyboardInstance.acessoryArray[index].Protocol = Accessory.e_DecoderType.MM;
-				keyboardInstance.acessoryArray[index].Position = Accessory.e_Position.on_green_stright_hp1;
-			}
-			keyboards.Add(keyboardInstance);
-			*/
+			tblVw_Keyboard.Source = new TableSourceKeyboard(keyboards);
+			Add(tblVw_Keyboard);
+			((TableSourceKeyboard)tblVw_Keyboard.Source).KeyboardSelected += ViewController_KeyboardSelected;
 
-			//tblVw_Keyboard.Source = new TableSource(keyboards);
-			//Add(tablVw_keyboards);
-			//((TableSource)tablVw_keyboards.Source).ItemSelected += ViewController_ItemSelected;
-
+			btn_keyboard_add.Clicked += btn_keyboard_add_EventHandler;
 		}
+
+		public override void DidReceiveMemoryWarning()
+		{
+			base.DidReceiveMemoryWarning();
+			// Release any cached data, images, etc that aren't in use.
+		}
+
+		/*--------------------------------------------------------------------*/
+
+		void ViewController_KeyboardSelected(object sender, int currentKeyboardListIndex)
+		{
+			currentKeyboardInstanceListIndex = currentKeyboardListIndex;
+		}
+
+		private void btn_keyboard_add_EventHandler(object sender, EventArgs args)
+		{
+			keyboards.Add(new Keyboard());
+			tblVw_Keyboard.ReloadData();
+		}
+
+		/*--------------------------------------------------------------------*/
 
 		partial void btn_1_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(1, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(1, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_1_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(1, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(1, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_2_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(2, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(2, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_2_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(2, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(2, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_3_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(3, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(3, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_3_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(3, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(3, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_4_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(4, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(4, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_4_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(4, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(4, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_5_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(5, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(5, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_5_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(5, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(5, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_6_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(6, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(6, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_6_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(6, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(6, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_7_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(7, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(7, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_7_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(7, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(7, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_8_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(8, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(8, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_8_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(8, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(8, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_9_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(9, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(9, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_9_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(9, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(9, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_10_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(10, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(10, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_10_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(10, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(10, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_11_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(11, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(11, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_11_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(11, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(11, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_12_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(12, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(12, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_12_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(12, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(12, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_13_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(13, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(13, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_13_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(13, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(13, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_14_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(14, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(14, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_14_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(14, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(14, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_15_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(15, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(15, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_15_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(15, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(15, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 		partial void btn_16_green_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(16, Accessory.e_Position.on_green_stright_hp1);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(16, Accessory.e_Position.on_green_stright_hp1);
 		}
 
 		partial void btn_16_red_pressed(UIButton sender)
 		{
-			keyboardInstance.SetAccessoryState(16, Accessory.e_Position.off_round_red_right_hp0);
+			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(16, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
 	}
