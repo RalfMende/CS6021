@@ -1,20 +1,38 @@
 ﻿<Properties StartupConfiguration="{0252A39D-AAD4-4EB3-99C5-E6EF47AF1FB7}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CS6021 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TableSourceMemory.cs">
+    <Files>
+      <File FileName="TableSourceControlUnit.cs" Line="56" Column="21" />
+      <File FileName="ViewCtrl_ControlUnit.cs" Line="90" Column="45" />
+      <File FileName="HardwareControllers/ControlUnit.cs" Line="31" Column="54" />
+      <File FileName="TableSourceKeyboard.cs" Line="58" Column="29" />
+      <File FileName="TableSourceMemory.cs" Line="12" Column="33" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CS6021" expanded="True" selected="True">
-            <Node name="CS6021" expanded="True" />
+          <Node name="CS6021" expanded="True">
+            <Node name="CS6021" expanded="True">
+              <Node name="CentralStations" expanded="True" />
+              <Node name="HardwareControllers" expanded="True" />
+              <Node name="Internal" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>line</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CS6021 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78A9E6CE-5211-4E5E-8415-AC1D800E34D5" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

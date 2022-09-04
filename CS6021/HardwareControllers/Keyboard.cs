@@ -1,5 +1,8 @@
 ﻿using System;
-namespace CS6021
+using CentralStations;
+using Internal;
+
+namespace HardwareControllers
 {
     public class Keyboard
     {

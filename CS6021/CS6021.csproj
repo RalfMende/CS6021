@@ -26,7 +26,8 @@
         <MtouchArch>x86_64</MtouchArch>
         <MtouchLink>None</MtouchLink>
         <MtouchDebug>true</MtouchDebug>
-        <CodesignKey>iPhone Developer</CodesignKey>
+        <CodesignKey>Apple Development: mende.r@web.de (ACY9H6635C)</CodesignKey>
+        <CodesignProvision>iOS Team Provisioning Profile: com.Mandy.CS6021</CodesignProvision>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
         <DebugType>none</DebugType>
@@ -78,21 +79,37 @@
         <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_red_75.imageset\6021_btn_red_75.jpg" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_red_75.imageset\Contents.json" />
-        <ImageAsset Include="Resources\Assets.xcassets\6021_75.imageset\6021_75.jpg" />
-        <ImageAsset Include="Resources\Assets.xcassets\6021_75.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_green_75.imageset\6021_btn_green_75.jpg" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_btn_green_75.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\knob_75.imageset\knob_75.png" />
         <ImageAsset Include="Resources\Assets.xcassets\knob_75.imageset\Contents.json" />
-        <ImageAsset Include="Resources\Assets.xcassets\6021_75_mod.imageset\6021_75_mod.jpg" />
-        <ImageAsset Include="Resources\Assets.xcassets\6021_75_mod.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_led.imageset\6021_led.jpg" />
         <ImageAsset Include="Resources\Assets.xcassets\6021_led.imageset\Contents.json" />
-        <ImageAsset Include="Resources\Assets.xcassets\6040_75.imageset\6040_75.jpg" />
-        <ImageAsset Include="Resources\Assets.xcassets\6040_75.imageset\Contents.json" />
-        <ImageAsset Include="Resources\Assets.xcassets\6043_75.imageset\6043_75.jpg" />
-        <ImageAsset Include="Resources\Assets.xcassets\6043_75.imageset\Contents.json" />
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Assets.xcassets\.DS_Store" />
+        <ImageAsset Include="Assets.xcassets\keyboard.imageset\keyboard.png" />
+        <ImageAsset Include="Assets.xcassets\keyboard.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\controlunit.imageset\controlunit.png" />
+        <ImageAsset Include="Assets.xcassets\controlunit.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\memory.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\memory.imageset\memory.png" />
+        <ImageAsset Include="Assets.xcassets\keyboard_70.imageset\keyboard_70.png" />
+        <ImageAsset Include="Assets.xcassets\keyboard_70.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\controlunit_70.imageset\controlunit_70.png" />
+        <ImageAsset Include="Assets.xcassets\controlunit_70.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\memory_70.imageset\memory_70.png" />
+        <ImageAsset Include="Assets.xcassets\memory_70.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\.DS_Store" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-1.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
@@ -107,6 +124,7 @@
     <ItemGroup>
         <None Include="Info.plist" />
         <None Include="Entitlements.plist" />
+        <None Include=".DS_Store" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Main.cs" />
@@ -120,8 +138,6 @@
         <Compile Include="CentralStations\CS1.cs" />
         <Compile Include="Internal\Accessory.cs" />
         <Compile Include="Internal\Locomotive.cs" />
-        <Compile Include="Internal\TableSourceControlUnit.cs" />
-        <Compile Include="Internal\UISliderCustom.cs" />
         <Compile Include="Internal\route.cs" />
         <Compile Include="ViewCtrl_Keyboard.cs" />
         <Compile Include="ViewCtrl_Keyboard.designer.cs">
@@ -132,12 +148,14 @@
           <DependentUpon>ViewCtrl_Memory.cs</DependentUpon>
         </Compile>
         <Compile Include="CentralStations\CentralStation.cs" />
-        <Compile Include="Internal\TableSourceMemory.cs" />
-        <Compile Include="Internal\TableSourceKeyboard.cs" />
         <Compile Include="ViewCtrl_ControlUnit.cs" />
         <Compile Include="ViewCtrl_ControlUnit.designer.cs">
           <DependentUpon>ViewCtrl_ControlUnit.cs</DependentUpon>
         </Compile>
+        <Compile Include="TableSourceControlUnit.cs" />
+        <Compile Include="TableSourceKeyboard.cs" />
+        <Compile Include="TableSourceMemory.cs" />
+        <Compile Include="UISliderCustom.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+using CentralStations;
+using Internal;
 
-namespace CS6021
+namespace HardwareControllers
 {
     public class ControlUnit
     {

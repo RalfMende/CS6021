@@ -1,5 +1,6 @@
 ﻿using System;
-namespace CS6021
+
+namespace Internal
 {
     public class Accessory
     {

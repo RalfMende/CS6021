@@ -1,5 +1,7 @@
 ﻿using System;
-namespace CS6021
+using Internal;
+
+namespace CentralStations
 {
     public class CS1
     {

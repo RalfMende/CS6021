@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_CodesignBundle Include="CS6021.app">
+      <CodesignSigningKey>C2ED08D988D162DB94992F6514127BEFC02579F5</CodesignSigningKey>
+      <CodesignEntitlements>/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.5/Entitlements.xcent</CodesignEntitlements>
+      <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <RequireCodeSigning>true</RequireCodeSigning>
+      <CodesignExtraArgs></CodesignExtraArgs>
+      <CodesignResourceRules></CodesignResourceRules>
+      <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
+      <CodesignKeychain></CodesignKeychain>
+      <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
+      <SourceProjectPath>/Users/ralf/Documents/GitHub/CS6021/CS6021</SourceProjectPath>
+    </_CodesignBundle>
+  </ItemGroup>
+</Project>

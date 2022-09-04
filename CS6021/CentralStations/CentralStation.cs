@@ -7,8 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
+using Internal;
 
-namespace CS6021
+namespace CentralStations
 {
     public static class CentralStation
     {

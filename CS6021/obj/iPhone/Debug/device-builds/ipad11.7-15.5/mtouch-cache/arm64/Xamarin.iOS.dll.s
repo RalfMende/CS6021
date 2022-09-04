@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.12.0 (2020-02/adf1bc4335d Tue Mar 22 14:10:44 EDT 2022)"
+	.asciz "Mono AOT Compiler 6.12.0 (2020-02/dffa5ab9224 Mon May 16 11:03:48 EDT 2022)"
 	.asciz "Xamarin.iOS.dll"
 	.asciz ""
 
@@ -208,7 +208,7 @@ LDIFF_SYM3=ut_end - ut_2
 	.align 4
 	.no_dead_strip System_nint__ctor_long
 System_nint__ctor_long:
-.file 1 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/common/NativeTypes/Primitives.cs"
+.file 1 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/common/NativeTypes/Primitives.cs"
 .loc 1 75 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2195,7 +2195,7 @@ Lme_45:
 	.align 4
 	.no_dead_strip Foundation_NSIndexPath_get_Row
 Foundation_NSIndexPath_get_Row:
-.file 2 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/Additions.cs"
+.file 2 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/Additions.cs"
 .loc 2 18 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2215,7 +2215,7 @@ Lme_46:
 	.align 4
 	.no_dead_strip Foundation_NSIndexPath_get_ClassHandle
 Foundation_NSIndexPath_get_ClassHandle:
-.file 3 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSIndexPath.g.cs"
+.file 3 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSIndexPath.g.cs"
 .loc 3 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2252,7 +2252,7 @@ Lme_48:
 	.align 4
 	.no_dead_strip Foundation_NSIndexPath_get_LongRow
 Foundation_NSIndexPath_get_LongRow:
-.loc 3 240 0 prologue_end
+.loc 3 243 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -2294,7 +2294,7 @@ Lme_4a:
 	.align 4
 	.no_dead_strip Foundation_ExportAttribute__ctor_string
 Foundation_ExportAttribute__ctor_string:
-.file 4 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/ExportAttribute.cs"
+.file 4 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/ExportAttribute.cs"
 .loc 4 47 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2415,7 +2415,7 @@ Lme_4f:
 	.align 4
 	.no_dead_strip Foundation_ModelAttribute__ctor
 Foundation_ModelAttribute__ctor:
-.file 5 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/ModelAttribute.cs"
+.file 5 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/ModelAttribute.cs"
 .loc 5 30 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2429,7 +2429,7 @@ Lme_50:
 	.align 4
 	.no_dead_strip Foundation_You_Should_Not_Call_base_In_This_Method__ctor
 Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
-.file 6 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/ModelNotImplementedException.cs"
+.file 6 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/ModelNotImplementedException.cs"
 .loc 6 31 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2445,7 +2445,7 @@ Lme_51:
 	.align 4
 	.no_dead_strip Foundation_MonoTouchException__ctor_Foundation_NSException
 Foundation_MonoTouchException__ctor_Foundation_NSException:
-.file 7 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/MonoTouchException.cs"
+.file 7 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/MonoTouchException.cs"
 .loc 7 16 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2716,7 +2716,7 @@ Lme_58:
 	.align 4
 	.no_dead_strip Foundation_NSDispatcher__ctor
 Foundation_NSDispatcher__ctor:
-.file 8 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSAction.cs"
+.file 8 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSAction.cs"
 .loc 8 39 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -3075,7 +3075,7 @@ Lme_62:
 	.align 4
 	.no_dead_strip Foundation_NSArray_FromNSObjects_T_REF_T_REF__
 Foundation_NSArray_FromNSObjects_T_REF_T_REF__:
-.file 9 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSArray.cs"
+.file 9 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSArray.cs"
 .loc 9 70 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -3258,7 +3258,7 @@ Lme_65:
 	.align 4
 	.no_dead_strip Foundation_NSArray_get_ClassHandle
 Foundation_NSArray_get_ClassHandle:
-.file 10 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSArray.g.cs"
+.file 10 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSArray.g.cs"
 .loc 10 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -3378,7 +3378,7 @@ Lme_6a:
 	.align 4
 	.no_dead_strip Foundation_NSAutoreleasePool_get_ClassHandle
 Foundation_NSAutoreleasePool_get_ClassHandle:
-.file 11 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSAutoreleasePool.cs"
+.file 11 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSAutoreleasePool.cs"
 .loc 11 46 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -3445,7 +3445,7 @@ Lme_6d:
 	.align 4
 	.no_dead_strip Foundation_NSDictionary_ContainsKeyValuePair_System_Collections_Generic_KeyValuePair_2_Foundation_NSObject_Foundation_NSObject
 Foundation_NSDictionary_ContainsKeyValuePair_System_Collections_Generic_KeyValuePair_2_Foundation_NSObject_Foundation_NSObject:
-.file 12 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSDictionary.cs"
+.file 12 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSDictionary.cs"
 .loc 12 153 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -3920,7 +3920,7 @@ Lme_78:
 	.align 4
 	.no_dead_strip Foundation_NSDictionary_get_ClassHandle
 Foundation_NSDictionary_get_ClassHandle:
-.file 13 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSDictionary.g.cs"
+.file 13 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSDictionary.g.cs"
 .loc 13 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -4337,7 +4337,7 @@ Lme_83:
 	.align 4
 	.no_dead_strip Foundation_NSFastEnumerator_1_T_REF__ctor_Foundation_NSObject
 Foundation_NSFastEnumerator_1_T_REF__ctor_Foundation_NSObject:
-.file 14 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSFastEnumerator.cs"
+.file 14 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSFastEnumerator.cs"
 .loc 14 36 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -4634,7 +4634,7 @@ Lme_8b:
 	.align 4
 	.no_dead_strip Foundation_NSNull_get_Null
 Foundation_NSNull_get_Null:
-.file 15 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSNull.cs"
+.file 15 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSNull.cs"
 .loc 15 11 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -4670,7 +4670,7 @@ Lme_8c:
 	.align 4
 	.no_dead_strip Foundation_NSNull_get_ClassHandle
 Foundation_NSNull_get_ClassHandle:
-.file 16 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSNull.g.cs"
+.file 16 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSNull.g.cs"
 .loc 16 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -4757,7 +4757,7 @@ Lme_90:
 	.align 4
 	.no_dead_strip Foundation_NSObject_get_disposed
 Foundation_NSObject_get_disposed:
-.file 17 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSObject2.cs"
+.file 17 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSObject2.cs"
 .loc 17 145 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -6836,7 +6836,7 @@ Lme_c2:
 	.align 4
 	.no_dead_strip Foundation_NSObject_get_ClassHandle
 Foundation_NSObject_get_ClassHandle:
-.file 18 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSObject.g.cs"
+.file 18 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSObject.g.cs"
 .loc 18 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8090,7 +8090,7 @@ Lme_d8:
 	.align 4
 	.no_dead_strip Foundation_NSRunLoop_get_ClassHandle
 Foundation_NSRunLoop_get_ClassHandle:
-.file 19 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSRunLoop.g.cs"
+.file 19 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSRunLoop.g.cs"
 .loc 19 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8213,7 +8213,7 @@ Lme_dd:
 	.align 4
 	.no_dead_strip Foundation_NSSet_get_ClassHandle
 Foundation_NSSet_get_ClassHandle:
-.file 20 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSSet.g.cs"
+.file 20 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSSet.g.cs"
 .loc 20 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8325,7 +8325,7 @@ Lme_e3:
 	.align 4
 	.no_dead_strip Foundation_NSSet__GetEnumeratord__5_MoveNext
 Foundation_NSSet__GetEnumeratord__5_MoveNext:
-.file 21 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSSet.cs"
+.file 21 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSSet.cs"
 .loc 21 0 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -8440,7 +8440,7 @@ Lme_e6:
 	.align 4
 	.no_dead_strip Foundation_NSSet_1_TKey_REF__ctor_intptr
 Foundation_NSSet_1_TKey_REF__ctor_intptr:
-.file 22 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSSet_1.cs"
+.file 22 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSSet_1.cs"
 .loc 22 52 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8483,7 +8483,7 @@ Lme_e8:
 	.align 4
 	.no_dead_strip Foundation_NSString_CreateWithCharacters_intptr_string_int_int_bool
 Foundation_NSString_CreateWithCharacters_intptr_string_int_int_bool:
-.file 23 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSString.cs"
+.file 23 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSString.cs"
 .loc 23 74 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -8758,7 +8758,7 @@ Lme_f0:
 	.align 4
 	.no_dead_strip Foundation_NSString_CompareTo_Foundation_NSString
 Foundation_NSString_CompareTo_Foundation_NSString:
-.file 24 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSString2.cs"
+.file 24 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSString2.cs"
 .loc 24 70 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8787,7 +8787,7 @@ Lme_f1:
 	.align 4
 	.no_dead_strip Foundation_NSString_get_ClassHandle
 Foundation_NSString_get_ClassHandle:
-.file 25 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSString.g.cs"
+.file 25 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSString.g.cs"
 .loc 25 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8923,7 +8923,7 @@ Lme_f6:
 	.align 4
 	.no_dead_strip Foundation_NSZone__ctor_intptr
 Foundation_NSZone__ctor_intptr:
-.file 26 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/NSZone.cs"
+.file 26 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/NSZone.cs"
 .loc 26 30 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -9024,7 +9024,7 @@ Lme_fc:
 	.align 4
 	.no_dead_strip Foundation_ProtocolAttribute_get_WrapperType
 Foundation_ProtocolAttribute_get_WrapperType:
-.file 27 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/ProtocolAttribute.cs"
+.file 27 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/ProtocolAttribute.cs"
 .loc 27 36 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -9130,7 +9130,7 @@ Lme_103:
 	.align 4
 	.no_dead_strip Foundation_RegisterAttribute__ctor
 Foundation_RegisterAttribute__ctor:
-.file 28 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/Foundation/RegisterAttribute.cs"
+.file 28 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/Foundation/RegisterAttribute.cs"
 .loc 28 33 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -9243,7 +9243,7 @@ Lme_108:
 	.align 4
 	.no_dead_strip Foundation_NSEnumerator_get_ClassHandle
 Foundation_NSEnumerator_get_ClassHandle:
-.file 29 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSEnumerator.g.cs"
+.file 29 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSEnumerator.g.cs"
 .loc 29 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -9323,7 +9323,7 @@ Lme_10c:
 	.align 4
 	.no_dead_strip Foundation_NSException_get_ClassHandle
 Foundation_NSException_get_ClassHandle:
-.file 30 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSException.g.cs"
+.file 30 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSException.g.cs"
 .loc 30 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -9443,7 +9443,7 @@ Lme_112:
 	.align 4
 	.no_dead_strip Foundation_NSObjectProtocolWrapper__ctor_intptr_bool
 Foundation_NSObjectProtocolWrapper__ctor_intptr_bool:
-.file 31 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/Foundation/NSObjectProtocol.g.cs"
+.file 31 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/Foundation/NSObjectProtocol.g.cs"
 .loc 31 176 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -9945,7 +9945,7 @@ b CoreGraphics_CGAffineTransform__ctor_System_nfloat_System_nfloat_System_nfloat
 	.align 4
 	.no_dead_strip CoreGraphics_CGAffineTransform__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat
 CoreGraphics_CGAffineTransform__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
-.file 32 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/CoreGraphics/CGAffineTransform.cs"
+.file 32 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/CoreGraphics/CGAffineTransform.cs"
 .loc 32 109 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -10440,7 +10440,7 @@ b CoreGraphics_CGPoint_get_X
 	.align 4
 	.no_dead_strip CoreGraphics_CGPoint_get_X
 CoreGraphics_CGPoint_get_X:
-.file 33 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/common/NativeTypes/Drawing.cs"
+.file 33 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/common/NativeTypes/Drawing.cs"
 .loc 33 97 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -11323,7 +11323,7 @@ Lme_14f:
 	.align 4
 	.no_dead_strip CoreFoundation_CFArray__ctor_intptr
 CoreFoundation_CFArray__ctor_intptr:
-.file 34 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/CoreFoundation/CFArray.cs"
+.file 34 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/CoreFoundation/CFArray.cs"
 .loc 34 58 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -11668,7 +11668,7 @@ Lme_157:
 	.align 4
 	.no_dead_strip CoreFoundation_CFArray_get_CFNullHandle
 CoreFoundation_CFArray_get_CFNullHandle:
-.file 35 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/CoreFoundation/CFArray.g.cs"
+.file 35 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/CoreFoundation/CFArray.g.cs"
 .loc 35 54 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
@@ -11695,7 +11695,7 @@ b CoreFoundation_CFRange__ctor_int_int
 	.align 4
 	.no_dead_strip CoreFoundation_CFRange__ctor_int_int
 CoreFoundation_CFRange__ctor_int_int:
-.file 36 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/CoreFoundation/CFString.cs"
+.file 36 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/CoreFoundation/CFString.cs"
 .loc 36 73 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -12039,7 +12039,7 @@ Lme_166:
 	.align 4
 	.no_dead_strip CoreFoundation_NativeObject__ctor_intptr_bool
 CoreFoundation_NativeObject__ctor_intptr_bool:
-.file 37 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/CoreFoundation/NativeObject.cs"
+.file 37 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/CoreFoundation/NativeObject.cs"
 .loc 37 41 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -12172,7 +12172,7 @@ Lme_16b:
 	.align 4
 	.no_dead_strip UIKit_UIKitThreadAccessException__ctor
 UIKit_UIKitThreadAccessException__ctor:
-.file 38 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIApplication.cs"
+.file 38 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIApplication.cs"
 .loc 38 28 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -12387,7 +12387,7 @@ Lme_171:
 	.align 4
 	.no_dead_strip UIKit_UIApplication_get_ClassHandle
 UIKit_UIApplication_get_ClassHandle:
-.file 39 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIApplication.g.cs"
+.file 39 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIApplication.g.cs"
 .loc 39 55 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -12491,7 +12491,7 @@ Lme_175:
 	.align 4
 	.no_dead_strip UIKit_UIBarButtonItem_add_Clicked_System_EventHandler
 UIKit_UIBarButtonItem_add_Clicked_System_EventHandler:
-.file 40 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIBarButtonItem.cs"
+.file 40 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIBarButtonItem.cs"
 .loc 40 72 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -12659,7 +12659,7 @@ Lme_177:
 	.align 4
 	.no_dead_strip UIKit_UIBarButtonItem_get_ClassHandle
 UIKit_UIBarButtonItem_get_ClassHandle:
-.file 41 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIBarButtonItem.g.cs"
+.file 41 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIBarButtonItem.g.cs"
 .loc 41 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -12903,7 +12903,7 @@ Lme_17f:
 	.align 4
 	.no_dead_strip UIKit_UIBarItem_get_ClassHandle
 UIKit_UIBarItem_get_ClassHandle:
-.file 42 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIBarItem.g.cs"
+.file 42 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIBarItem.g.cs"
 .loc 42 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -12963,7 +12963,7 @@ Lme_182:
 	.align 4
 	.no_dead_strip UIKit_UIButton_get_ClassHandle
 UIKit_UIButton_get_ClassHandle:
-.file 43 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIButton.g.cs"
+.file 43 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIButton.g.cs"
 .loc 43 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -13063,7 +13063,7 @@ Lme_186:
 	.align 4
 	.no_dead_strip UIKit_UIControl_get_ClassHandle
 UIKit_UIControl_get_ClassHandle:
-.file 44 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIControl.g.cs"
+.file 44 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIControl.g.cs"
 .loc 44 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -13196,7 +13196,7 @@ Lme_18b:
 	.align 4
 	.no_dead_strip UIKit_UIGestureRecognizer_OnDispose
 UIKit_UIGestureRecognizer_OnDispose:
-.file 45 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIGestureRecognizer.cs"
+.file 45 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIGestureRecognizer.cs"
 .loc 45 0 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -13356,7 +13356,7 @@ Lme_18d:
 	.align 4
 	.no_dead_strip UIKit_UIGestureRecognizer_get_ClassHandle
 UIKit_UIGestureRecognizer_get_ClassHandle:
-.file 46 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIGestureRecognizer.g.cs"
+.file 46 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIGestureRecognizer.g.cs"
 .loc 46 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -13777,7 +13777,7 @@ Lme_199:
 	.align 4
 	.no_dead_strip UIKit_UILongPressGestureRecognizer_get_ClassHandle
 UIKit_UILongPressGestureRecognizer_get_ClassHandle:
-.file 47 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UILongPressGestureRecognizer.g.cs"
+.file 47 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UILongPressGestureRecognizer.g.cs"
 .loc 47 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -13917,7 +13917,7 @@ Lme_19f:
 	.align 4
 	.no_dead_strip UIKit_UIImage_get_ClassHandle
 UIKit_UIImage_get_ClassHandle:
-.file 48 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIImage.g.cs"
+.file 48 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIImage.g.cs"
 .loc 48 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14052,7 +14052,7 @@ Lme_1a3:
 	.align 4
 	.no_dead_strip UIKit_UIKitSynchronizationContext_CreateCopy
 UIKit_UIKitSynchronizationContext_CreateCopy:
-.file 49 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIKitSynchronizationContext.cs"
+.file 49 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIKitSynchronizationContext.cs"
 .loc 49 19 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14130,7 +14130,7 @@ Lme_1a7:
 	.align 4
 	.no_dead_strip UIKit_DraggingEventArgs__cctor
 UIKit_DraggingEventArgs__cctor:
-.file 50 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIScrollView.cs"
+.file 50 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIScrollView.cs"
 .loc 50 20 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -14181,7 +14181,7 @@ Lme_1a8:
 	.align 4
 	.no_dead_strip UIKit_DraggingEventArgs__ctor_bool
 UIKit_DraggingEventArgs__ctor_bool:
-.file 51 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIScrollView.g.cs"
+.file 51 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIScrollView.g.cs"
 .loc 51 1588 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14217,7 +14217,7 @@ Lme_1aa:
 	.align 4
 	.no_dead_strip UIKit_UITableView_get_Source
 UIKit_UITableView_get_Source:
-.file 52 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UITableView.cs"
+.file 52 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UITableView.cs"
 .loc 52 20 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -14315,7 +14315,7 @@ Lme_1ac:
 	.align 4
 	.no_dead_strip UIKit_UITableView_get_ClassHandle
 UIKit_UITableView_get_ClassHandle:
-.file 53 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UITableView.g.cs"
+.file 53 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UITableView.g.cs"
 .loc 53 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14715,7 +14715,7 @@ Lme_1b7:
 	.align 4
 	.no_dead_strip UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string
 UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string:
-.file 54 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UITableViewCell.cs"
+.file 54 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UITableViewCell.cs"
 .loc 54 14 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -14756,7 +14756,7 @@ Lme_1b8:
 	.align 4
 	.no_dead_strip UIKit_UITableViewCell_get_ClassHandle
 UIKit_UITableViewCell_get_ClassHandle:
-.file 55 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UITableViewCell.g.cs"
+.file 55 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UITableViewCell.g.cs"
 .loc 55 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14887,7 +14887,7 @@ Lme_1bd:
 	.align 4
 	.no_dead_strip UIKit_UITextField_get_ClassHandle
 UIKit_UITextField_get_ClassHandle:
-.file 56 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UITextField.g.cs"
+.file 56 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UITextField.g.cs"
 .loc 56 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14999,7 +14999,7 @@ Lme_1c2:
 	.align 4
 	.no_dead_strip UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action
 UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action:
-.file 57 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIView.cs"
+.file 57 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIView.cs"
 .loc 57 0 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -15108,7 +15108,7 @@ Lme_1c3:
 	.align 4
 	.no_dead_strip UIKit_UIView_get_ClassHandle
 UIKit_UIView_get_ClassHandle:
-.file 58 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIView.g.cs"
+.file 58 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIView.g.cs"
 .loc 58 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -16227,7 +16227,7 @@ Lme_1d8:
 	.align 4
 	.no_dead_strip UIKit_UIViewController_Add_UIKit_UIView
 UIKit_UIViewController_Add_UIKit_UIView:
-.file 59 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/UIKit/UIViewController.cs"
+.file 59 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/UIKit/UIViewController.cs"
 .loc 59 53 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -16254,7 +16254,7 @@ Lme_1d9:
 	.align 4
 	.no_dead_strip UIKit_UIViewController_get_ClassHandle
 UIKit_UIViewController_get_ClassHandle:
-.file 60 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIViewController.g.cs"
+.file 60 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIViewController.g.cs"
 .loc 60 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -16477,7 +16477,7 @@ Lme_1e0:
 	.align 4
 	.no_dead_strip UIKit_UIWindow_get_ClassHandle
 UIKit_UIWindow_get_ClassHandle:
-.file 61 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIWindow.g.cs"
+.file 61 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIWindow.g.cs"
 .loc 61 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -16567,7 +16567,7 @@ Lme_1e4:
 	.align 4
 	.no_dead_strip UIKit_UIApplicationDelegateWrapper__ctor_intptr_bool
 UIKit_UIApplicationDelegateWrapper__ctor_intptr_bool:
-.file 62 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIApplicationDelegate.g.cs"
+.file 62 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIApplicationDelegate.g.cs"
 .loc 62 781 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -16588,7 +16588,7 @@ Lme_1f1:
 	.align 4
 	.no_dead_strip UIKit_UICoordinateSpaceWrapper__ctor_intptr_bool
 UIKit_UICoordinateSpaceWrapper__ctor_intptr_bool:
-.file 63 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UICoordinateSpace.g.cs"
+.file 63 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UICoordinateSpace.g.cs"
 .loc 63 84 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -16826,7 +16826,7 @@ Lme_1fc:
 	.align 4
 	.no_dead_strip UIKit_UIDynamicItemWrapper__ctor_intptr_bool
 UIKit_UIDynamicItemWrapper__ctor_intptr_bool:
-.file 64 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIDynamicItem.g.cs"
+.file 64 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIDynamicItem.g.cs"
 .loc 64 97 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -17009,7 +17009,7 @@ Lme_207:
 	.align 4
 	.no_dead_strip UIKit_UIImageView_get_ClassHandle
 UIKit_UIImageView_get_ClassHandle:
-.file 65 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIImageView.g.cs"
+.file 65 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIImageView.g.cs"
 .loc 65 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17069,7 +17069,7 @@ Lme_20a:
 	.align 4
 	.no_dead_strip UIKit_UILabel_get_ClassHandle
 UIKit_UILabel_get_ClassHandle:
-.file 66 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UILabel.g.cs"
+.file 66 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UILabel.g.cs"
 .loc 66 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17160,7 +17160,7 @@ Lme_20e:
 	.align 4
 	.no_dead_strip UIKit_UIResponder_get_ClassHandle
 UIKit_UIResponder_get_ClassHandle:
-.file 67 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIResponder.g.cs"
+.file 67 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIResponder.g.cs"
 .loc 67 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17300,7 +17300,7 @@ Lme_213:
 	.align 4
 	.no_dead_strip UIKit_UIScene_get_ClassHandle
 UIKit_UIScene_get_ClassHandle:
-.file 68 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIScene.g.cs"
+.file 68 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIScene.g.cs"
 .loc 68 63 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17360,7 +17360,7 @@ Lme_216:
 	.align 4
 	.no_dead_strip UIKit_UISceneConfiguration_get_ClassHandle
 UIKit_UISceneConfiguration_get_ClassHandle:
-.file 69 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UISceneConfiguration.g.cs"
+.file 69 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UISceneConfiguration.g.cs"
 .loc 69 63 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17472,7 +17472,7 @@ Lme_21a:
 	.align 4
 	.no_dead_strip UIKit_UISceneConnectionOptions_get_ClassHandle
 UIKit_UISceneConnectionOptions_get_ClassHandle:
-.file 70 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UISceneConnectionOptions.g.cs"
+.file 70 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UISceneConnectionOptions.g.cs"
 .loc 70 63 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -17532,7 +17532,7 @@ Lme_21d:
 	.align 4
 	.no_dead_strip UIKit_UISceneDelegateWrapper__ctor_intptr_bool
 UIKit_UISceneDelegateWrapper__ctor_intptr_bool:
-.file 71 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UISceneDelegate.g.cs"
+.file 71 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UISceneDelegate.g.cs"
 .loc 71 233 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -17553,7 +17553,7 @@ Lme_21e:
 	.align 4
 	.no_dead_strip UIKit_UISceneSession_get_ClassHandle
 UIKit_UISceneSession_get_ClassHandle:
-.file 72 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UISceneSession.g.cs"
+.file 72 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UISceneSession.g.cs"
 .loc 72 63 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -18620,7 +18620,7 @@ Lme_240:
 	.align 4
 	.no_dead_strip UIKit_UIScrollViewDelegate__ctor_Foundation_NSObjectFlag
 UIKit_UIScrollViewDelegate__ctor_Foundation_NSObjectFlag:
-.file 73 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIScrollViewDelegate.g.cs"
+.file 73 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIScrollViewDelegate.g.cs"
 .loc 73 201 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -18665,7 +18665,7 @@ Lme_242:
 	.align 4
 	.no_dead_strip UIKit_UISlider_get_ClassHandle
 UIKit_UISlider_get_ClassHandle:
-.file 74 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UISlider.g.cs"
+.file 74 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UISlider.g.cs"
 .loc 74 55 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -19066,7 +19066,7 @@ Lme_24c:
 	.align 4
 	.no_dead_strip UIKit_UITableViewSource__ctor
 UIKit_UITableViewSource__ctor:
-.file 75 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UITableViewSource.g.cs"
+.file 75 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UITableViewSource.g.cs"
 .loc 75 56 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -19183,7 +19183,7 @@ Lme_251:
 	.align 4
 	.no_dead_strip UIKit_UIWindowSceneDelegateWrapper__ctor_intptr_bool
 UIKit_UIWindowSceneDelegateWrapper__ctor_intptr_bool:
-.file 76 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIWindowSceneDelegate.g.cs"
+.file 76 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIWindowSceneDelegate.g.cs"
 .loc 76 135 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -19204,7 +19204,7 @@ Lme_253:
 	.align 4
 	.no_dead_strip UIKit_UIWindowSceneSessionRoleExtensions_get_UIWindowSceneSessionRoleApplication
 UIKit_UIWindowSceneSessionRoleExtensions_get_UIWindowSceneSessionRoleApplication:
-.file 77 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/UIKit/UIWindowSceneSessionRole.g.cs"
+.file 77 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/UIKit/UIWindowSceneSessionRole.g.cs"
 .loc 77 67 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
@@ -19494,7 +19494,7 @@ Lme_259:
 	.align 4
 	.no_dead_strip ObjCRuntime_Runtime_gc_collect_intptr_
 ObjCRuntime_Runtime_gc_collect_intptr_:
-.file 78 "/Users/builder/azdo/_work/2/s/xamarin-macios/runtime/Delegates.generated.cs"
+.file 78 "/Users/builder/azdo/_work/1/s/xamarin-macios/runtime/Delegates.generated.cs"
 .loc 78 368 0 prologue_end
 .word 0xa9b67bfd
 .word 0x910003fd
@@ -22613,7 +22613,7 @@ Lme_277:
 	.align 4
 	.no_dead_strip ObjCRuntime_Runtime_Initialize_ObjCRuntime_Runtime_InitializationOptions_
 ObjCRuntime_Runtime_Initialize_ObjCRuntime_Runtime_InitializationOptions_:
-.file 79 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Runtime.cs"
+.file 79 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Runtime.cs"
 .loc 79 222 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
@@ -28405,7 +28405,7 @@ Lme_2bd:
 	.align 4
 	.no_dead_strip ObjCRuntime_Runtime_InitializePlatform_ObjCRuntime_Runtime_InitializationOptions_
 ObjCRuntime_Runtime_InitializePlatform_ObjCRuntime_Runtime_InitializationOptions_:
-.file 80 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Runtime.iOS.cs"
+.file 80 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Runtime.iOS.cs"
 .loc 80 75 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -28462,7 +28462,7 @@ Lme_333:
 	.align 4
 	.no_dead_strip ObjCRuntime_MonoPInvokeCallbackAttribute__ctor_System_Type
 ObjCRuntime_MonoPInvokeCallbackAttribute__ctor_System_Type:
-.file 81 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/MonoPInvokeCallbackAttribute.cs"
+.file 81 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/MonoPInvokeCallbackAttribute.cs"
 .loc 81 30 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -28524,7 +28524,7 @@ Lme_335:
 	.align 4
 	.no_dead_strip ObjCRuntime_BaseWrapper__ctor_intptr_bool
 ObjCRuntime_BaseWrapper__ctor_intptr_bool:
-.file 82 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/BaseWrapper.cs"
+.file 82 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/BaseWrapper.cs"
 .loc 82 25 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -28607,7 +28607,7 @@ Lme_338:
 	.align 4
 	.no_dead_strip ObjCRuntime_BindAsAttribute__ctor_System_Type
 ObjCRuntime_BindAsAttribute__ctor_System_Type:
-.file 83 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/BindAsAttribute.cs"
+.file 83 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/BindAsAttribute.cs"
 .loc 83 43 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -28639,7 +28639,7 @@ Lme_339:
 	.align 4
 	.no_dead_strip ObjCRuntime_BlockProxyAttribute__ctor_System_Type
 ObjCRuntime_BlockProxyAttribute__ctor_System_Type:
-.file 84 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/BlockProxyAttribute.cs"
+.file 84 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/BlockProxyAttribute.cs"
 .loc 84 20 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -28719,7 +28719,7 @@ b ObjCRuntime_BlockLiteral_get_NSConcreteStackBlock
 	.align 4
 	.no_dead_strip ObjCRuntime_BlockLiteral_get_NSConcreteStackBlock
 ObjCRuntime_BlockLiteral_get_NSConcreteStackBlock:
-.file 85 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Blocks.cs"
+.file 85 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Blocks.cs"
 .loc 85 76 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
@@ -30447,7 +30447,7 @@ Lme_345:
 	.align 4
 	.no_dead_strip ObjCRuntime_Class_Initialize_ObjCRuntime_Runtime_InitializationOptions_
 ObjCRuntime_Class_Initialize_ObjCRuntime_Runtime_InitializationOptions_:
-.file 86 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Class.cs"
+.file 86 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Class.cs"
 .loc 86 46 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -32723,7 +32723,7 @@ Lme_368:
 	.align 4
 	.no_dead_strip ObjCRuntime_DisposableObject_get_Handle
 ObjCRuntime_DisposableObject_get_Handle:
-.file 87 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/DisposableObject.cs"
+.file 87 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/DisposableObject.cs"
 .loc 87 34 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -32942,7 +32942,7 @@ Lme_36f:
 	.align 4
 	.no_dead_strip ObjCRuntime_Libraries_System__cctor
 ObjCRuntime_Libraries_System__cctor:
-.file 88 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Dlfcn.cs"
+.file 88 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Dlfcn.cs"
 .loc 88 55 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
@@ -32967,7 +32967,7 @@ Lme_370:
 	.align 4
 	.no_dead_strip ObjCRuntime_Libraries_CarPlay__cctor
 ObjCRuntime_Libraries_CarPlay__cctor:
-.file 89 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/ObjCRuntime/Libraries.g.cs"
+.file 89 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/ObjCRuntime/Libraries.g.cs"
 .loc 89 104 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
@@ -33117,7 +33117,7 @@ Lme_377:
 	.align 4
 	.no_dead_strip ObjCRuntime_ErrorHelper_CreateError_int_string_object__
 ObjCRuntime_ErrorHelper_CreateError_int_string_object__:
-.file 90 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/ErrorHelper.cs"
+.file 90 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/ErrorHelper.cs"
 .loc 90 24 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -33177,7 +33177,7 @@ Lme_379:
 	.align 4
 	.no_dead_strip ObjCRuntime_MarshalObjectiveCExceptionEventArgs_set_Exception_Foundation_NSException
 ObjCRuntime_MarshalObjectiveCExceptionEventArgs_set_Exception_Foundation_NSException:
-.file 91 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Exceptions.cs"
+.file 91 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Exceptions.cs"
 .loc 91 16 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -33326,7 +33326,7 @@ Lme_389:
 	.align 4
 	.no_dead_strip ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject
 ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject:
-.file 92 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/INativeObject.cs"
+.file 92 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/INativeObject.cs"
 .loc 92 27 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -33416,7 +33416,7 @@ Lme_38c:
 	.align 4
 	.no_dead_strip ObjCRuntime_NativeAttribute__ctor
 ObjCRuntime_NativeAttribute__ctor:
-.file 93 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/NativeAttribute.cs"
+.file 93 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/NativeAttribute.cs"
 .loc 93 21 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -33806,7 +33806,7 @@ Lme_398:
 	.align 4
 	.no_dead_strip ObjCRuntime_RuntimeException__ctor_int_bool_System_Exception_string_object__
 ObjCRuntime_RuntimeException__ctor_int_bool_System_Exception_string_object__:
-.file 94 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/RuntimeException.cs"
+.file 94 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/RuntimeException.cs"
 .loc 94 26 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -33875,7 +33875,7 @@ Lme_39b:
 	.align 4
 	.no_dead_strip ObjCRuntime_Selector__ctor_intptr
 ObjCRuntime_Selector__ctor_intptr:
-.file 95 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/Selector.cs"
+.file 95 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/Selector.cs"
 .loc 95 53 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -34067,7 +34067,7 @@ Lme_3a2:
 	.align 4
 	.no_dead_strip ObjCRuntime_ThrowHelper_ThrowArgumentException_string_string
 ObjCRuntime_ThrowHelper_ThrowArgumentException_string_string:
-.file 96 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/ThrowHelper.cs"
+.file 96 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/ThrowHelper.cs"
 .loc 96 22 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -34131,7 +34131,7 @@ Lme_3a7:
 	.align 4
 	.no_dead_strip ObjCRuntime_TrampolineBlockBase__ctor_ObjCRuntime_BlockLiteral_
 ObjCRuntime_TrampolineBlockBase__ctor_ObjCRuntime_BlockLiteral_:
-.file 97 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/TrampolineBlockBase.cs"
+.file 97 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/TrampolineBlockBase.cs"
 .loc 97 21 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -34218,7 +34218,7 @@ Lme_3ac:
 	.align 4
 	.no_dead_strip ObjCRuntime_UserDelegateTypeAttribute__ctor_System_Type
 ObjCRuntime_UserDelegateTypeAttribute__ctor_System_Type:
-.file 98 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/ObjCRuntime/UserDelegateTypeAttribute.cs"
+.file 98 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/ObjCRuntime/UserDelegateTypeAttribute.cs"
 .loc 98 44 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -34280,7 +34280,7 @@ Lme_3ae:
 	.align 4
 	.no_dead_strip ObjCRuntime_Trampolines_SDAction_Invoke_intptr
 ObjCRuntime_Trampolines_SDAction_Invoke_intptr:
-.file 99 "/Users/builder/azdo/_work/2/s/xamarin-macios/src/build/ios/native/ObjCRuntime/Trampolines.g.cs"
+.file 99 "/Users/builder/azdo/_work/1/s/xamarin-macios/src/build/ios/native/ObjCRuntime/Trampolines.g.cs"
 .loc 99 12083 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -71786,7 +71786,7 @@ L_OBJC_METH_VAR_NAME_89:
 .align	3
 L_OBJC_IMAGE_INFO:
 .long	0
-.long	16
+.long	0
 .section __TEXT, __const
 	.align 3
 Lglobals_hash:
@@ -71816,7 +71816,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "E3713E45-4507-44F6-87CC-C9B98A25CE1E"
+	.asciz "C07D1D2F-F2FB-499F-B8EC-A9A33AEB3C2E"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -71910,7 +71910,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 191,41,137,138,122,177,80,176,160,245,191,8,173,159,3,82
+	.byte 99,183,39,158,129,100,202,107,69,232,185,2,49,220,206,250
 	.globl _mono_aot_module_Xamarin_iOS_info
 	.align 3
 _mono_aot_module_Xamarin_iOS_info:
@@ -75062,7 +75062,7 @@ Lfde72_end:
 	.asciz "Foundation.NSIndexPath:get_LongRow"
 	.asciz "Foundation_NSIndexPath_get_LongRow"
 
-	.byte 3,239,1
+	.byte 3,242,1
 	.quad Foundation_NSIndexPath_get_LongRow
 	.quad Lme_49
 

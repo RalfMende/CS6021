@@ -1,20 +1,20 @@
-# Version: 15.8.0.3 (xcode13.3: eb7f8ed35)
-/Library/Frameworks/Xamarin.iOS.framework/Versions/15.8.0.3/lib/mtouch/mtouch.exe \
+# Version: 15.12.0.2 (d17-3: 87f98a75e)
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.12.0.2/lib/mtouch/mtouch.exe \
 	--debug \
 	--sgen-conc \
 	'/target-framework:Xamarin.iOS,Version=v1.0' \
 	--http-message-handler=NSUrlSessionHandler \
-	'\"--cache=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/mtouch-cache\"' \
-	'\"--root-assembly=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.exe\"' \
+	--cache=/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--root-assembly=/Users/ralf/Documents/GitHub/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.exe \
 	--sdkroot=/Applications/Xcode.app/Contents/Developer \
-	--targetver=14.4 \
-	'\"--sim=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.app\"' \
+	--targetver=14.0 \
+	--sim=/Users/ralf/Documents/GitHub/CS6021/CS6021/bin/iPhoneSimulator/Debug/CS6021.app \
 	--executable=CS6021 \
 	--nolink \
 	--sdk=15.5 \
 	--aot-options=-O=-float32 \
 	--abi=x86_64 \
-	'\"--symbollist=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/mtouch-symbols.list\"' \
+	--symbollist=/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
@@ -26,4 +26,4 @@
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	--reference=/Users/ralf/.nuget/packages/xamarin.essentials/1.7.3/lib/xamarinios10/Xamarin.Essentials.dll \
-	'@/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/response-file.rsp' \
+	@/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/response-file.rsp \

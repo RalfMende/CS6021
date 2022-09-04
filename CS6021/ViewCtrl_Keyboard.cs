@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using Foundation;
 using UIKit;
+using HardwareControllers;
+using Internal;
 
 namespace CS6021
 {

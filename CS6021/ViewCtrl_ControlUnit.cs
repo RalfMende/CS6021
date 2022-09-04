@@ -5,6 +5,9 @@ using System.Timers;
 using UIKit;
 using CoreGraphics;
 using System.Collections.Generic;
+using CentralStations;
+using HardwareControllers;
+using Internal;
 
 namespace CS6021
 {
@@ -32,7 +35,6 @@ namespace CS6021
             led_f2_img.Hidden = true;
             led_f3_img.Hidden = true;
             led_f4_img.Hidden = true;
-
 
 
 
@@ -248,12 +250,12 @@ namespace CS6021
                 if (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveProtocol() != Locomotive.e_DecoderType.MFX
                     && tmpAddress > 0 && tmpAddress < 256) // as CentralStation allowes a maximum of 255 locomotives
                 {
-                    //controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveAddress(tmpAddress);
-                    //controlUnits[currentControlUnitInstanceListIndex].nameOfInstance = tmpAddress.ToString();
+                    //ControlUnit controlUnitInstance = new ControlUnit();
+                    //controlUnitInstance.SetLocomotiveAddress(tmpAddress);
+                    //controlUnits.Add(controlUnitInstance);
+                    controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveAddress(tmpAddress);
+                    controlUnits[currentControlUnitInstanceListIndex].nameOfInstance = tmpAddress.ToString();
 
-                    ControlUnit controlUnitInstance = new ControlUnit();
-                    controlUnitInstance.SetLocomotiveAddress(tmpAddress);
-                    controlUnits.Add(controlUnitInstance);
                     tablVw_ControlUnit.ReloadData();
                     UpdateLocomotiveInfos();
 

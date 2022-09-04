@@ -6,10 +6,9 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/bundle/AppIcon60x60@2x.png</string>
-			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/bundle/AppIcon76x76@2x~ipad.png</string>
-			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/bundle/Assets.car</string>
-			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/bundle/AppIcon76x76@2x~ipad.png</string>
+			<string>/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/bundle/Assets.car</string>
+			<string>/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.notices</key>
@@ -20,7 +19,7 @@
 				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>76x76@1x app icons only apply to iPad apps targeting releases of iOS prior to 10.0.</string>
 			<key>type</key>

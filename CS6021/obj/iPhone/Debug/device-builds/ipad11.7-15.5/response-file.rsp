@@ -2,17 +2,17 @@
 --sgen-conc
 /target-framework:Xamarin.iOS,Version=v1.0
 --http-message-handler=NSUrlSessionHandler
-"--cache=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.5/mtouch-cache"
-"--root-assembly=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/CS6021.exe"
+--cache=/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.5/mtouch-cache
+--root-assembly=/Users/ralf/Documents/GitHub/CS6021/CS6021/bin/iPhone/Debug/CS6021.exe
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --targetver=14.4
-"--dev=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/bin/iPhone/Debug/device-builds/ipad11.7-15.5/CS6021.app"
+--dev=/Users/ralf/Documents/GitHub/CS6021/CS6021/bin/iPhone/Debug/device-builds/ipad11.7-15.5/CS6021.app
 --executable=CS6021
 --linksdkonly
 --sdk=15.5
 --aot-options=-O=-float32
 --abi=arm64
-"--symbollist=/Users/ralf/Documents/Visual Studio Mac/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.5/mtouch-symbols.list"
+--symbollist=/Users/ralf/Documents/GitHub/CS6021/CS6021/obj/iPhone/Debug/device-builds/ipad11.7-15.5/mtouch-symbols.list
 --dsym=no
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
