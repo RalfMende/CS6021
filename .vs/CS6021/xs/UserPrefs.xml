@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{0252A39D-AAD4-4EB3-99C5-E6EF47AF1FB7}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.CS6021 automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="CS6021/ViewCtrl_ControlUnit.designer.cs">
     <Files>
       <File FileName="CS6021/ViewCtrl_ControlUnit.cs" Line="1" Column="1" />
@@ -9,7 +9,7 @@
       <File FileName="CS6021/ViewCtrl_Memory.cs" Line="1" Column="1" />
       <File FileName="CS6021/CentralStations/CS2_TCP.cs" Line="1" Column="1" />
       <File FileName="CS6021/Info.plist" />
-      <File FileName="CS6021/ViewCtrl_ControlUnit.designer.cs" Line="1" Column="1" />
+      <File FileName="CS6021/ViewCtrl_ControlUnit.designer.cs" Line="12" Column="37" />
       <File FileName="CS6021/CentralStations/CentralStation.cs" Line="1" Column="1" />
       <File FileName="CS6021/HardwareControllers/ControlUnit.cs" Line="1" Column="1" />
       <File FileName="CS6021/Internal/Accessory.cs" Line="27" Column="27" />
@@ -36,9 +36,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
 </Properties>
