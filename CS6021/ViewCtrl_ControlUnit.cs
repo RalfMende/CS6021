@@ -283,35 +283,11 @@ namespace CS6021
         private void UpdateGui()
         {
             // update address
-            if (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress() < 10)
-            {
-                lbl_address.Text = "00" + controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress().ToString();
-            }
-            else if (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress() < 100)
-            {
-                lbl_address.Text = "0" + controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress().ToString();
-            }
-            else
-            {
-                lbl_address.Text = controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress().ToString();
-            }
-
-            // update protocol indicator
-            switch (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveProtocol())
-            {
-                case Locomotive.e_DecoderType.MM:
-                    btn_protocol.SetTitle("MM", UIControlState.Normal);
-                    break;
-
-                case Locomotive.e_DecoderType.DCC:
-                    btn_protocol.SetTitle("DCC", UIControlState.Normal);
-                    break;
-
-                case Locomotive.e_DecoderType.MFX:
-                    btn_protocol.SetTitle("mfx", UIControlState.Normal);
-                    break;
-            }
-
+            lbl_address.Text = controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress().ToString("000");
+            
+            // update protocol
+            btn_protocol.SetTitle(controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveProtocol().ToString(), UIControlState.Normal);
+            
             // update direction indicator
             if (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveDirection() == Locomotive.e_Direction.Forwards)
             {
