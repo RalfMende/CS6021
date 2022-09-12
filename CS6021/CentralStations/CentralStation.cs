@@ -36,11 +36,10 @@ namespace CentralStations
 {
     public static class CentralStation
     {
+        public static bool IsConnected { get; set; }
+        public static bool TrackPowerActive { get; set; }
+
         private static string centralStationType = "CS2_UDP";//null;
-        public static bool isConnected = false;
-        public static bool TrackPowerActive = false;
-
-
 
         /*--------------------------*/
 
@@ -50,6 +49,14 @@ namespace CentralStations
             int returnValue = -1;
             string ipAddressByUser = hostname;// "maerklin-cs3"; //TODO: Change to stored value
             Stopwatch sw = new Stopwatch();
+
+            //if (Application.Current.Resources.ContainsKey("ipAddress"))
+            //{
+            //    string UserName = Application.Current.Properties["ipAddress"].ToString();
+            //}
+
+            IsConnected = false;
+            TrackPowerActive = false;
 
             sw.Start();
             while (true)
@@ -61,10 +68,11 @@ namespace CentralStations
                 }
                 else
                 {
-                    isConnected = true;
+                    IsConnected = true;
                     if (ipAddressByUser != null)
                     {
-                        //Properties.Settings.Default.ipAddress = ipAddressByUser; //TODO: store value permanently
+                        //Application.Current.Properties.Settings.Default.ipAddress = ipAddressByUser; //TODO: store value permanently
+                        //await Application.Current.SavePropertiesAsync();
                     }
                     break;
                 }
@@ -89,7 +97,7 @@ namespace CentralStations
                     case "CS2_UDP":
                         if (CS2_UDP.SetupConnection(ipAddress_Hostname) > 0)
                         {
-                            isConnected = CS2_UDP.IsConnected;
+                            IsConnected = CS2_UDP.IsConnected;
                         }
                         retVal = 1;
                         break;
@@ -117,7 +125,7 @@ namespace CentralStations
                     case "CS2_UDP":
                         if (CS2_UDP.EndConnection() > 0)
                         {
-                            isConnected = CS2_UDP.IsConnected;
+                            IsConnected = CS2_UDP.IsConnected;
                         }
                         retVal = 1;
                         break;
@@ -136,7 +144,7 @@ namespace CentralStations
 
         public static void ActivateTrackPower()
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
@@ -152,7 +160,7 @@ namespace CentralStations
 
         public static void DeactivateTrackPower()
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
@@ -168,7 +176,7 @@ namespace CentralStations
 
         public static void SetLocomotiveSpeed(Locomotive Loc)
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
@@ -184,7 +192,7 @@ namespace CentralStations
 
         public static void SetLocomotiveDirection(Locomotive Loc)
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
@@ -200,7 +208,7 @@ namespace CentralStations
 
         public static void SetLocomotiveFunction(Locomotive Loc, int function)
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
@@ -216,7 +224,7 @@ namespace CentralStations
 
         public static void SetAccessoryState(Accessory accessory, Accessory.e_Position position)
         {
-            if (centralStationType != null && isConnected == true)
+            if (centralStationType != null && IsConnected == true)
             {
                 switch (centralStationType)
                 {
