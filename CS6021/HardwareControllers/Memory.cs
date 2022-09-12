@@ -29,19 +29,20 @@ namespace HardwareControllers
 {
     public class Memory
     {
-        public string nameOfInstance;
+        public string NameOfInstance { get; set; }
+        public Boolean LearningIsActive { get; set; }
 
         private Route[] routeArray;
 
         public Memory()
         {
-            this.nameOfInstance = "newMemory";
+            this.NameOfInstance = "newMemory";
             this.routeArray = new Route[24];
         }
 
         public Memory(string name)
         {
-            this.nameOfInstance = name;
+            this.NameOfInstance = name;
             this.routeArray = new Route[24];
         }
 
@@ -54,7 +55,7 @@ namespace HardwareControllers
         public int SetRoute(int id)
         {
             int retVal = 0;
-            if (CentralStation.isConnected == true)
+            if (CentralStation.IsConnected == true)
             {
                 foreach (Accessory accessory in this.routeArray[id - 1].accessories)
                 {

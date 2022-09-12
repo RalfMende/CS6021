@@ -29,6 +29,8 @@ using System.Collections.Generic;
 using CentralStations;
 using HardwareControllers;
 using Internal;
+using System.Drawing;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CS6021
 {
@@ -36,12 +38,11 @@ namespace CS6021
     {
         public List<ControlUnit> controlUnits = new List<ControlUnit>();
         private int currentControlUnitInstanceListIndex = 0;
-
         private int sevenSegDigitMax = 3;
         private string sevenSegString = "";
         private string sevenSegStringPrevious = "";
         Timer entryTimer = new Timer(5000);
-
+        
         public ViewCtrl_ControlUnit(IntPtr handle) : base(handle)
         {
         }
@@ -57,37 +58,19 @@ namespace CS6021
             led_f3_img.Hidden = true;
             led_f4_img.Hidden = true;
 
-
-
-            //TODO: Initially put one instance if apps runs for the first time
-
+            //TODO: Initially put one instance only, if you run the app for the first time, then get it stored data
             ControlUnit controlUnitInstance = new ControlUnit();
-            controlUnitInstance.nameOfInstance = "V60";
             controlUnitInstance.SetLocomotiveProtocol(Locomotive.e_DecoderType.MFX);
             controlUnitInstance.SetLocomotiveAddress(6);
+            controlUnitInstance.NameOfInstance = "V60";
             controlUnits.Add(controlUnitInstance);
-
             //controlUnits.Add(new ControlUnit());
-
-
-
-
 
             tablVw_ControlUnit.Source = new TableSourceControlUnit(controlUnits);
             Add(tablVw_ControlUnit);
             ((TableSourceControlUnit)tablVw_ControlUnit.Source).ControlUnitSelected += ViewController_ControlUnitSelected;
 
             btn_controlUnit_add.Clicked += btn_controlUnit_add_EventHandler;
-
-
-
-
-
-            /*var longPress = new UILongPressGestureRecognizer(tapAndSlide);
-            longPress.MinimumPressDuration = 0;
-            //longPress.CancelsTouchesInView = false;
-            sld_speed.AddGestureRecognizer(longPress);
-            sld_speed.UserInteractionEnabled = true;*/
         }
 
         public override void DidReceiveMemoryWarning()
@@ -101,18 +84,14 @@ namespace CS6021
         void ViewController_ControlUnitSelected(object sender, int currentControlUnitListIndex)
         {
             currentControlUnitInstanceListIndex = currentControlUnitListIndex;
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         private void btn_controlUnit_add_EventHandler(object sender, EventArgs args)
         {
             controlUnits.Add(new ControlUnit());
-            this.controlUnits.Sort((x, y) => x.nameOfInstance.CompareTo(y.nameOfInstance));
+            this.controlUnits.Sort((x, y) => x.NameOfInstance.CompareTo(y.NameOfInstance));
             tablVw_ControlUnit.ReloadData();
-            
-            //var userLookupValueIndex = controlUnits.IndexOf("NewLocomotive");
-            //tablVw_ControlUnit.SelectRow(NSIndexPath.FromRowSection(userLookupIndex, 0), false, UITableViewScrollPosition.None);
-            //UpdateLocomotive(true);
         }
 
         /*--------------------------------------------------------------------*/
@@ -183,37 +162,37 @@ namespace CS6021
         partial void btn_f1_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(1, 2); // toggle state
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_f2_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(2, 2); // toggle state
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_f3_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(3, 2); // toggle state
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_f4_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(4, 2); // toggle state
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_function_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(0, 1);
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_off_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveFunctionState(0, 0);
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_go_pressed(UIButton sender)
@@ -229,20 +208,20 @@ namespace CS6021
         partial void btn_protocol_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].ToggleLocomotiveProtocol();
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void btn_direction_pressed(UIButton sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].ToggleLocomotiveDirection();
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveSpeed(0);
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         partial void sld_speed_value_changed(UISlider sender)
         {
             controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveSpeed((int)sld_speed.Value);
-            UpdateLocomotiveInfos();
+            UpdateGui();
         }
 
         /*--------------------------------------------------------------------*/
@@ -275,10 +254,10 @@ namespace CS6021
                     //controlUnitInstance.SetLocomotiveAddress(tmpAddress);
                     //controlUnits.Add(controlUnitInstance);
                     controlUnits[currentControlUnitInstanceListIndex].SetLocomotiveAddress(tmpAddress);
-                    controlUnits[currentControlUnitInstanceListIndex].nameOfInstance = tmpAddress.ToString();
+                    controlUnits[currentControlUnitInstanceListIndex].NameOfInstance = tmpAddress.ToString();
 
                     tablVw_ControlUnit.ReloadData();
-                    UpdateLocomotiveInfos();
+                    UpdateGui();
 
                     sevenSegStringPrevious = sevenSegString;
                 }
@@ -301,7 +280,7 @@ namespace CS6021
             lbl_address.Text = sevenSegString; //TODO: Why is this not working?
         }
 
-        private void UpdateLocomotiveInfos()
+        private void UpdateGui()
         {
             // update address
             if (controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveAddress() < 10)
@@ -357,7 +336,7 @@ namespace CS6021
             led_f2_img.Hidden = !controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveFunctionState(2);
             led_f3_img.Hidden = !controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveFunctionState(3);
             led_f4_img.Hidden = !controlUnits[currentControlUnitInstanceListIndex].GetLocomotiveFunctionState(4);
-
+            
             // set track state
             //led_Img.Hidden = !CentralStation.GetTrackPowerState(); //TODO: Implement function by read back from Central Station
         }

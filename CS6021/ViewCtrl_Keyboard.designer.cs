@@ -16,6 +16,54 @@ namespace CS6021
 		UIKit.UIBarButtonItem btn_keyboard_add { get; set; }
 
 		[Outlet]
+		UIKit.UILabel lbl_key_1 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_10 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_11 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_12 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_13 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_14 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_15 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_16 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_2 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_3 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_4 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_5 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_6 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_7 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_8 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_key_9 { get; set; }
+
+		[Outlet]
 		UIKit.UITableView tblVw_Keyboard { get; set; }
 
 		[Action ("btn_1_green_pressed:")]
@@ -116,14 +164,94 @@ namespace CS6021
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btn_keyboard_add != null) {
+				btn_keyboard_add.Dispose ();
+				btn_keyboard_add = null;
+			}
+
 			if (tblVw_Keyboard != null) {
 				tblVw_Keyboard.Dispose ();
 				tblVw_Keyboard = null;
 			}
 
-			if (btn_keyboard_add != null) {
-				btn_keyboard_add.Dispose ();
-				btn_keyboard_add = null;
+			if (lbl_key_1 != null) {
+				lbl_key_1.Dispose ();
+				lbl_key_1 = null;
+			}
+
+			if (lbl_key_2 != null) {
+				lbl_key_2.Dispose ();
+				lbl_key_2 = null;
+			}
+
+			if (lbl_key_3 != null) {
+				lbl_key_3.Dispose ();
+				lbl_key_3 = null;
+			}
+
+			if (lbl_key_4 != null) {
+				lbl_key_4.Dispose ();
+				lbl_key_4 = null;
+			}
+
+			if (lbl_key_5 != null) {
+				lbl_key_5.Dispose ();
+				lbl_key_5 = null;
+			}
+
+			if (lbl_key_6 != null) {
+				lbl_key_6.Dispose ();
+				lbl_key_6 = null;
+			}
+
+			if (lbl_key_7 != null) {
+				lbl_key_7.Dispose ();
+				lbl_key_7 = null;
+			}
+
+			if (lbl_key_8 != null) {
+				lbl_key_8.Dispose ();
+				lbl_key_8 = null;
+			}
+
+			if (lbl_key_9 != null) {
+				lbl_key_9.Dispose ();
+				lbl_key_9 = null;
+			}
+
+			if (lbl_key_10 != null) {
+				lbl_key_10.Dispose ();
+				lbl_key_10 = null;
+			}
+
+			if (lbl_key_11 != null) {
+				lbl_key_11.Dispose ();
+				lbl_key_11 = null;
+			}
+
+			if (lbl_key_12 != null) {
+				lbl_key_12.Dispose ();
+				lbl_key_12 = null;
+			}
+
+			if (lbl_key_13 != null) {
+				lbl_key_13.Dispose ();
+				lbl_key_13 = null;
+			}
+
+			if (lbl_key_14 != null) {
+				lbl_key_14.Dispose ();
+				lbl_key_14 = null;
+			}
+
+			if (lbl_key_15 != null) {
+				lbl_key_15.Dispose ();
+				lbl_key_15 = null;
+			}
+
+			if (lbl_key_16 != null) {
+				lbl_key_16.Dispose ();
+				lbl_key_16 = null;
 			}
 		}
 	}

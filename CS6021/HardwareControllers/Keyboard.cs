@@ -29,19 +29,21 @@ namespace HardwareControllers
 {
     public class Keyboard
     {
-        public string nameOfInstance;
+        public string NameOfInstance { get; set; }
+        public int AccessoryStartAddress { get; set; }
 
         private Accessory[] acessoryArray;
 
         public Keyboard()
         {
-            this.nameOfInstance = "newKeyboard";
+            this.NameOfInstance = "newKeyboard";
             this.acessoryArray = new Accessory[16];
-            for (int index = 0; index < 16; index++)
+            this.AccessoryStartAddress = 1; // TODO: Automatically check for the next numbers
+            for (int index = AccessoryStartAddress; index < AccessoryStartAddress + 16; index++)
             {
                 this.acessoryArray[index] = new Accessory();
-                this.acessoryArray[index].id = Convert.ToByte(index+1);
-                this.acessoryArray[index].name = Convert.ToString(index+1);
+                this.acessoryArray[index].id = Convert.ToByte(index);
+                this.acessoryArray[index].name = Convert.ToString(index);
                 this.acessoryArray[index].Protocol = Accessory.e_DecoderType.MM;
                 this.acessoryArray[index].Position = Accessory.e_Position.on_green_stright_hp1;
             }
@@ -49,15 +51,17 @@ namespace HardwareControllers
 
         public Keyboard(string name, int acessoryStartId)
         {
-            this.nameOfInstance = name;
+            this.NameOfInstance = name;
+            this.AccessoryStartAddress = acessoryStartId;
             this.acessoryArray = new Accessory[16];
             for (int index = 0; index < 16; index++)
             {
                 this.acessoryArray[index] = new Accessory();
-                this.acessoryArray[index].id = Convert.ToByte(acessoryStartId + index);
-                this.acessoryArray[index].name = Convert.ToString(acessoryStartId + index);
+                this.acessoryArray[index].id = Convert.ToByte(this.AccessoryStartAddress + index);
+                this.acessoryArray[index].name = Convert.ToString(this.AccessoryStartAddress + index);
                 this.acessoryArray[index].Protocol = Accessory.e_DecoderType.MM;
                 this.acessoryArray[index].Position = Accessory.e_Position.on_green_stright_hp1;
+                
             }
         }
 
@@ -70,7 +74,7 @@ namespace HardwareControllers
         public int SetAccessoryState(int id, Accessory.e_Position position)
         {
             int retVal = 0;
-            if (CentralStation.isConnected == true)
+            if (CentralStation.IsConnected == true)
             {
                 this.acessoryArray[id - 1].Position = position;
                 CentralStation.SetAccessoryState(this.acessoryArray[id - 1], this.acessoryArray[id - 1].Position);

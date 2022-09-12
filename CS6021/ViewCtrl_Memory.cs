@@ -49,8 +49,8 @@ namespace CS6021
 			led_end_img.Hidden = true;
 			led_clear_img.Hidden = true;
 
-			//TODO: Initially put one instance if apps runs for the first time
-			memories.Add(new Memory("Hbf"));
+            //TODO: Initially put one instance only, if you run the app for the first time, then get it stored data
+            memories.Add(new Memory("Hbf"));
 
 			tblVw_Memory.Source = new TableSourceMemory(memories);
 			Add(tblVw_Memory);
@@ -218,9 +218,9 @@ namespace CS6021
 		{
 		}
 
-		//partial void btn_edit_pressed(UIButton sender)
-		//{
-		//}
+		/*partial void btn_edit_pressed(UIButton sender)
+		{
+		}*/
 
 		partial void btn_clear_pressed(UIButton sender)
 		{

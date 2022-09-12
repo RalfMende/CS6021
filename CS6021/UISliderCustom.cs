@@ -1,9 +1,4 @@
 ﻿/*
- * CS6021 - iPad Remote Controller for Märklin Central Station in ControlUnit-Design
- * 
- * Copyright (c) 2022 Ralf Mende
- * 
- * 
  * This file is part of CS6021.
  * 
  * CS6021 is free software: you can redistribute it and/or modify it 

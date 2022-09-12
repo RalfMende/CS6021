@@ -1,8 +1,4 @@
 ﻿/*
- * CS6021 - iPad Remote Controller for Märklin Central Station in ControlUnit-Design
- * 
- * Copyright (c) 2022 Ralf Mende
- * 
  * 
  * This file is part of CS6021.
  * 
@@ -61,7 +57,7 @@ namespace CS6021
                 cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier);
             }
 
-            cell.TextLabel.Text = item.nameOfInstance;
+            cell.TextLabel.Text = item.NameOfInstance;
 
             return cell;
         }

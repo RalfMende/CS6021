@@ -29,13 +29,13 @@ namespace HardwareControllers
 {
     public class ControlUnit
     {
-        public string nameOfInstance;
+        public string NameOfInstance { get; set; }
 
         private Locomotive locomotive;
 
         public ControlUnit()
         {
-            this.nameOfInstance = "newLocomotive";
+            this.NameOfInstance = "newLocomotive";
             this.locomotive = new Locomotive();
         }
 
@@ -51,7 +51,7 @@ namespace HardwareControllers
             {
                 this.locomotive.address = Convert.ToByte(address); //TODO: Change the way address is stored
             }
-            this.nameOfInstance = address.ToString();
+            this.NameOfInstance = address.ToString();
         }
 
         public int GetLocomotiveAddress()

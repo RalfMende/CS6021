@@ -43,11 +43,13 @@ namespace CS6021
 		{
 			base.ViewDidLoad();
 
-			//TODO: Initially put one instance if apps runs for the first time
-			keyboards.Add(new Keyboard("1-16", 1));
-			keyboards.Add(new Keyboard("17-32", 17));
+            //TODO: Initially put one instance only, if you run the app for the first time, then get it stored data
+            keyboards.Add(new Keyboard("1-16", 1));
+			UpdateGui();
+            keyboards.Add(new Keyboard("17-32", 17));
+			UpdateGui();
 
-			tblVw_Keyboard.Source = new TableSourceKeyboard(keyboards);
+            tblVw_Keyboard.Source = new TableSourceKeyboard(keyboards);
 			Add(tblVw_Keyboard);
 			((TableSourceKeyboard)tblVw_Keyboard.Source).KeyboardSelected += ViewController_KeyboardSelected;
 
@@ -65,12 +67,14 @@ namespace CS6021
 		void ViewController_KeyboardSelected(object sender, int currentKeyboardListIndex)
 		{
 			currentKeyboardInstanceListIndex = currentKeyboardListIndex;
-		}
+            UpdateGui();
+        }
 
-		private void btn_keyboard_add_EventHandler(object sender, EventArgs args)
+        private void btn_keyboard_add_EventHandler(object sender, EventArgs args)
 		{
 			keyboards.Add(new Keyboard());
-			tblVw_Keyboard.ReloadData();
+			UpdateGui();
+            tblVw_Keyboard.ReloadData();
 		}
 
 		/*--------------------------------------------------------------------*/
@@ -235,5 +239,26 @@ namespace CS6021
 			keyboards[currentKeyboardInstanceListIndex].SetAccessoryState(16, Accessory.e_Position.off_round_red_right_hp0);
 		}
 
-	}
+        /*--------------------------------------------------------------------*/
+
+        private void UpdateGui()
+		{
+			lbl_key_1.Text =  keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress.ToString();
+            lbl_key_2.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+1).ToString();
+            lbl_key_3.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+2).ToString();
+            lbl_key_4.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+3).ToString();
+            lbl_key_5.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+4).ToString();
+            lbl_key_6.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+5).ToString();
+            lbl_key_7.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+6).ToString();
+            lbl_key_8.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+7).ToString();
+            lbl_key_9.Text =  (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+8).ToString();
+            lbl_key_10.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+9).ToString();
+            lbl_key_11.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+10).ToString();
+            lbl_key_12.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+11).ToString();
+            lbl_key_13.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+12).ToString();
+            lbl_key_14.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+13).ToString();
+            lbl_key_15.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+14).ToString();
+            lbl_key_16.Text = (keyboards[currentKeyboardInstanceListIndex].AccessoryStartAddress+15).ToString();
+        }
+    }
 }
