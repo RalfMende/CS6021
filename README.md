@@ -18,3 +18,8 @@ The Idea behind the app:
   - remind speed/function-status of locomotives
   - enable multi tractions of locomotives
   - maybe even programming of CVs
+
+Here are some screenshots:
+![](Images/Screenshot_CentralUnit.png)
+![](Images/Screenshot_Keyboard.png)
+![](Images/Screenshot_Memory.png)
