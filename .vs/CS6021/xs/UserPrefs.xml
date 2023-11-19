@@ -1,18 +1,14 @@
 ﻿<Properties StartupConfiguration="{0252A39D-AAD4-4EB3-99C5-E6EF47AF1FB7}|Default">
-  <MonoDevelop.Ide.ItemProperties.CS6021 automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CS6021/ViewCtrl_ControlUnit.designer.cs">
+  <MonoDevelop.Ide.ItemProperties.CS6021 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F4E29855-5A87-4AD2-89EF-A3EEADD31972" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CS6021/ViewCtrl_Keyboard.cs">
     <Files>
-      <File FileName="CS6021/ViewCtrl_ControlUnit.cs" Line="1" Column="1" />
-      <File FileName="CS6021/ViewCtrl_Keyboard.cs" Line="1" Column="1" />
-      <File FileName="CS6021/ViewCtrl_Memory.cs" Line="1" Column="1" />
-      <File FileName="CS6021/CentralStations/CS2_TCP.cs" Line="1" Column="1" />
-      <File FileName="CS6021/Info.plist" />
-      <File FileName="CS6021/ViewCtrl_ControlUnit.designer.cs" Line="12" Column="37" />
-      <File FileName="CS6021/CentralStations/CentralStation.cs" Line="1" Column="1" />
-      <File FileName="CS6021/HardwareControllers/ControlUnit.cs" Line="1" Column="1" />
-      <File FileName="CS6021/Internal/Accessory.cs" Line="27" Column="27" />
+      <File FileName="CS6021/ViewCtrl_ControlUnit.cs" />
+      <File FileName="CS6021/HardwareControllers/ControlUnit.cs" />
+      <File FileName="CS6021/Main.cs" />
+      <File FileName="CS6021/ViewCtrl_Keyboard.designer.cs" />
+      <File FileName="CS6021/ViewCtrl_Keyboard.cs" Line="75" Column="1" />
+      <File FileName="CS6021/TableSourceKeyboard.cs" />
+      <File FileName="CS6021/HardwareControllers/Keyboard.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,20 +21,19 @@
               <Node name="Internal" expanded="True" />
               <Node name="Resources" expanded="True" />
               <Node name="ViewCtrl_ControlUnit.cs" expanded="True" />
-              <Node name="ViewCtrl_Keyboard.cs" expanded="True" />
+              <Node name="ViewCtrl_Keyboard.cs" expanded="True" selected="True" />
               <Node name="ViewCtrl_Memory.cs" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4808A787-DBBD-438D-9234-3B3B54F314CD" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9E04793-5D7C-46B7-9EDB-58531967610C" />
+  <MultiItemStartupConfigurations />
 </Properties>
